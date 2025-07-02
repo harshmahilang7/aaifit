@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-01 04:59:22
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-02 20:25:57
+  @Last Modified time: 2025-07-03 00:41:56
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -176,12 +176,15 @@
                         <div class="feature-hover-bg"></div>
                     </div>
                 </div>
-                
-                <a href="Products.html" class="about-btn">
-                    <span>Explore Products</span>
-                    <i class="fas fa-arrow-right"></i>
-                    <div class="btn-hover-effect"></div>
-                </a>
+               
+
+                   <div class="cta-container" data-scroll data-scroll-delay="300">
+      <a href="Products.html" class="cta-button">
+        <span>Explore Products</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </div>
             </div>
         </div>
     </div>
@@ -825,6 +828,26 @@
 <script src="js/about_us_section.js"></script>
 <script src="js/product_slider.js"></script>
 <script src="js/faq.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cta = document.querySelector('.cta-container');
+
+    const onScroll = () => {
+      const rect = cta.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      if (isVisible) {
+        cta.classList.add('visible');
+        window.removeEventListener('scroll', onScroll); // Remove after trigger
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // Check immediately on load too
+  });
+</script>
+
 
 </body>
 </html>
