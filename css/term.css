@@ -1,0 +1,157 @@
+
+/* terms and condition page starts============================== */
+/* Terms Section Styles */
+    .terms-section {
+        padding: 5rem 0;
+        position: relative;
+        background-color: var(--primary-extra-light);
+    }
+    
+    .document-badge {
+        position: absolute;
+        top: -30px;
+        right: 5%;
+        width: 80px;
+        height: 80px;
+        background: var(--primary-medium);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+        z-index: 1;
+    }
+    
+    .terms-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .terms-header h2 {
+        font-size: 2.5rem;
+        color: var(--primary-dark);
+        margin-bottom: 0.5rem;
+    }
+    
+    .t1 {
+        color: var(--text-light);
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    /* Terms Content */
+    .terms-content {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    
+    .terms-card {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px dashed var(--primary-light);
+    }
+    
+    .terms-card:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .terms-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-extra-light);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-medium);
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .t2 h3, .t3 h3, .t4 h3, 
+    .t6 h3, .t7 h3, .t8 h3,
+    .t9 h3, .t10 h3, .t11 h3 {
+        color: var(--primary-dark);
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+    }
+    
+    .t2 p, .t3 p, .t4 p, 
+    .t6 p, .t7 p, .t8 p,
+    .t9 p, .t10 p, .t11 p {
+        color: var(--text-light);
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+    
+    .t5 {
+        list-style: none;
+        margin: 1rem 0 1rem 1rem;
+    }
+    
+    .t5 li {
+        position: relative;
+        padding-left: 1.8rem;
+        margin-bottom: 0.6rem;
+        color: var(--text-light);
+    }
+    
+    .t5 li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.7rem;
+        width: 8px;
+        height: 8px;
+        background: var(--primary-medium);
+        border-radius: 50%;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .terms-header h2 {
+            font-size: 2rem;
+        }
+        
+        .document-badge {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            top: -20px;
+        }
+        
+        .terms-content {
+            padding: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .terms-header h2 {
+            font-size: 1.8rem;
+        }
+        
+        .t1 {
+            font-size: 1rem;
+        }
+        
+        .terms-card {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .t2 h3, .t3 h3, .t4 h3, 
+        .t6 h3, .t7 h3, .t8 h3,
+        .t9 h3, .t10 h3, .t11 h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    /*  terms and consitions page ends=======================================  */

@@ -1,0 +1,202 @@
+/**
+ * @Author: DASTAN_E_ALAM
+ * @Date:   2025-07-02 05:24:03
+ * @Last Modified by:   DASTAN_E_ALAM
+ * @Last Modified time: 2025-07-02 16:39:20
+ */
+/* PRODUCT SLIDER STARTS================================== */
+      .ps1 {
+            padding: 4rem 0;
+            background: var(--white);
+            margin: 0 auto;
+        }
+
+        .ps2 {
+            text-align: center;
+            color: var(--primary-dark);
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        .ps2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--primary-medium);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+        .ps3 .slick-track {
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .ps3 .slick-slide:not(.slick-current) {
+            filter: blur(3px) grayscale(30%);
+            transform: scale(0.85);
+            transition: 800ms;
+            opacity: 0.8;
+        }
+
+        .ps3 .slick-current {
+            transform: scale(1.05);
+            z-index: 2;
+        }
+
+        .ps3 .slick-current img {
+            animation: ps4 3.5s ease-in-out forwards infinite;
+        }
+
+        .ps5 {
+            margin: 0 auto;
+            position: relative;
+            width: 320px;
+            height: 480px;
+            filter: blur(0px) grayscale(0%);
+            transform: scale(1);
+            transition: all 0.5s ease;
+        }
+
+        .ps6 {
+            position: relative;
+            height: 380px;
+            width: 320px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .ps7 {
+            transform: rotate3d(0, 0, 0, 0deg);
+            transition: 700ms;
+            height: 100%;
+        }
+
+        .ps8 {
+           background: var(--white); 
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 100%;
+    height: 100%;
+    transform: skew(4deg, 2deg);
+    transition: 700ms;
+    border-radius: 12px;
+    /* box-shadow: 0 10px 30px var(--shadow-medium); */
+    /* border: 1px solid var(--primary-light);*/
+        }
+
+        .ps9 {
+            transform: rotate3d(0, 0, 0, 0deg);
+            transition: 700ms;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ps9 img {
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            transform: skew(-4deg, -2deg);
+            object-fit: contain;
+        }
+
+        .ps10 {
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 0 20px;
+            
+        }
+
+        .ps11 {
+            color: var(--primary-dark);
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ps12 {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+        }
+
+        .ps5:hover {
+            cursor: pointer;
+        }
+
+        .ps5:hover .ps7 {
+            transform: rotate3d(1, 4, 4, 4deg);
+        }
+
+        .ps5:hover .ps8 {
+            background: var(--primary-extra-light);
+            box-shadow: 0 15px 40px var(--shadow-medium);
+        }
+
+        .ps5:hover .ps9 {
+            transform: rotate3d(0, 14, -4, 14deg);
+        }
+
+        @keyframes ps4 {
+            0%, 100% { transform: skew(-4deg, -2deg) rotate(1deg); }
+            50% { transform: skew(-4deg, -2deg) rotate(-0.5deg); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .ps5 {
+                width: 280px;
+                height: 420px;
+            }
+            
+            .ps6 {
+                width: 280px;
+                height: 340px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ps1 {
+                padding: 3rem 1rem;
+            }
+            
+            .ps2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .ps5 {
+                width: 240px;
+                height: 380px;
+            }
+            
+            .ps6 {
+                width: 240px;
+                height: 300px;
+            }
+        }
+        
+
+        @media (max-width: 480px) {
+            .ps3 .slick-track {
+                padding: 40px 0;
+            }
+            
+            .ps3 .slick-slide:not(.slick-current) {
+                transform: scale(0.75);
+                opacity: 0.6;
+            }
+            
+            .ps10 {
+                bottom: -90px;
+            }
+        }
+        /* PRODUCT SLIDER ENDS================================ */
