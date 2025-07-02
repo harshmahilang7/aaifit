@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 05:20:39
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-02 19:37:16
+ * @Last Modified time: 2025-07-02 20:22:12
  */
 /* PRODUCTS SECTION STYLES */
 .products-section {
@@ -884,4 +884,15 @@
         padding-right: 2.5rem;
         gap: 2rem;
     }
+}
+
+.space
+{
+    padding: 20px;
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  max-height: 0;
 }
