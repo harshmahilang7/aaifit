@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 05:20:39
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-02 20:22:12
+ * @Last Modified time: 2025-07-04 20:38:09
  */
 /* PRODUCTS SECTION STYLES */
 .products-section {
@@ -896,3 +896,6 @@
   transition: max-height 0.4s ease;
   max-height: 0;
 }
+
+
+

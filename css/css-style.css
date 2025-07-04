@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-01 04:59:16
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-02 19:59:47
+ * @Last Modified time: 2025-07-04 20:32:14
  */
 :root {
   --primary-dark: #1b5e20;
@@ -276,9 +276,3 @@
     padding: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-  .cursor-dot,
-  .cursor-ring {
-    display: none !important;
-  }
-}

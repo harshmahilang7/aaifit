@@ -1,27 +1,51 @@
 /**
  * @Author: DASTAN_E_ALAM
- * @Date:   2025-07-02 19:10:45
+ * @Date:   2025-07-02 19:31:01
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-02 19:10:54
+ * @Last Modified time: 2025-07-04 21:02:28
  */
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const closeBtn = document.querySelector('.close-btn');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
 
-    closeBtn.addEventListener('click', () => {
+    function openMenu() {
+        hamburger.classList.add('active');
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
         hamburger.classList.remove('active');
         mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
     });
 
-    document.querySelectorAll('.mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            mobileMenu.classList.remove('active');
-        });
+    // Optional: Close if clicked outside menu
+    document.addEventListener('click', (e) => {
+        if (
+            mobileMenu.classList.contains('active') &&
+            !e.target.closest('header') &&
+            !e.target.closest('.mobile-menu')
+        ) {
+            closeMenu();
+        }
     });
+
+    // Optional: ESC to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeMenu();
+        }
+    });
+});
 

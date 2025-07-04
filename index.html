@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-01 04:59:22
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-03 01:21:05
+  @Last Modified time: 2025-07-04 21:01:54
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- &#9989; Font Awesome Icons (v6) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- &#9989; Custom Website Stylesheet -->
      <link rel="stylesheet" href="./css/css-style.css">
      <link rel="stylesheet" href="./css/about_page.css">
@@ -64,49 +65,48 @@
 
 
 <!-- Hero Section STARTS-->
-
+<!-- Header SECTION START -->
 <div class="header-container">
-        <header>
-           <a href="Welcome.html">
-             <img src="images/img-logo.png" alt="AIFIT Logo" class="logo">
-           </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <ul>
-                     <li><a href="/">Home</a></li>
-                     <li><a href="About.html">About Us</a></li>
-                    <li><a href="Products.html">Products</a></li>
-                    <li><a href="Features.html">Features</a></li>
-                    <li><a href="Testimonials.html">Testimonials</a></li>
-                    <li><a href="Contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            
-            <!-- Hamburger Menu -->
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header>
-    </div>
+    <header>
+        <a href="Welcome.html">
+            <img src="images/img-logo.png" alt="AIFIT Logo" class="logo">
+        </a>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <div class="close-btn">&times;</div>
-        <ul>
-            <li><a href="Welcome.html">Home </a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Products.html">Products</a></li>
-            <li><a href="Features.html">Features</a></li>
-            <li><a href="Testimonials.html">Testimonials</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-<!-- Header  SECTION ENDS-->
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="Welcome.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <ul>
+        <li><a href="Welcome.html" class="mobile-link">Home</a></li>
+        <li><a href="About.html" class="mobile-link">About Us</a></li>
+        <li><a href="Products.html" class="mobile-link">Products</a></li>
+        <li><a href="Features.html" class="mobile-link">Features</a></li>
+        <li><a href="Testimonials.html" class="mobile-link">Testimonials</a></li>
+        <li><a href="Contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+</div>
+<!-- Header SECTION ENDS -->
 
 <!-- Hero Section ENDS-->
 
@@ -117,7 +117,7 @@
     <h1 class="hero-title">Smart Comfort for Every Cycle</h1>
  <p class="hero-subtext">Revolutionizing period care with organic comfort, confidence, and care &mdash; made for today&rsquo;s woman.</p>    <div class="hero-cta">
       <a href="#" class="btn btn-primary">Shop Now</a>
-      <a href="#" class="btn btn-secondary">Learn More</a>
+      <!-- <a href="#" class="btn btn-secondary">Learn More</a> -->
     </div>
   </div>
   
@@ -151,31 +151,28 @@
             </div>
             <div class="about3" id="aboutContent">
                 <span class="sus5">Welcome to AaiFit</span>
+                <br>
                 <h2 class="sus6">Our Story</h2>
                 <p class="sus7">Experience the next generation of feminine care with aaifit's premium sanitary protection. Our innovative designs provide unmatched comfort and reliability when you need it most.</p>
                 
                 <div class="about-features">
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                        <span>Organic Materials</span>
-                        <div class="feature-hover-bg"></div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <span>12-Hour Protection</span>
-                        <div class="feature-hover-bg"></div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                        <span>Hypoallergenic</span>
-                        <div class="feature-hover-bg"></div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon"><i class="fas fa-tint"></i></div>
-                        <span>Ultra Absorbent</span>
-                        <div class="feature-hover-bg"></div>
-                    </div>
-                </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-seedling"></i></div>
+            <span>Organic Materials</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-stopwatch"></i></div>
+            <span>12-Hour Protection</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <span>Hypoallergenic</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-water"></i></div>
+            <span>Ultra Absorbent</span>
+          </div>
+        </div>
                
 
                    <div class="cta-container" data-scroll data-scroll-delay="300">
@@ -189,6 +186,8 @@
         </div>
     </div>
 </section>
+
+
 <!-- ABOUT US SECTION ENDS -->
 
 
