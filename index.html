@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-01 04:59:22
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-04 21:08:37
+  @Last Modified time: 2025-07-05 04:30:35
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -16,6 +16,10 @@
 
     <!-- Website Title -->
     <title>AAIFIT | Smart Comfort for Every Cycle</title>
+    <!-- GSAP + Draggable CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
     <!-- &#9989; Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- &#9989; Font Awesome Icons (v6) -->
@@ -266,204 +270,198 @@
 <!-- WHY US SECTION ENDS =========================================================== -->
 
 
-
-
-
-<!-- PRODUCTS SLIDER SECTION STARTS ================================================ -->
-<section class="products-section">
-    <div class="section-header">
-        <div class="subtitle">Our Products</div>
-        <h2 class="title">Aaifit Premium Products</h2>
-        <div class="divider">
-            <div class="line"></div>
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 3L2 12l10 9v-6h10v-6H12V3z"/>
-                </svg>
-            </div>
-            <div class="line"></div>
-        </div>
-    </div>
-    
-    <div class="products-container">
-        <button class="slider-nav prev" aria-label="Previous products">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
-            </svg>
-        </button>
+ <section class="portfolio-section">
+        <!-- Floating background elements -->
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
         
-        <div class="products-slider">
-            <div class="product-card">
-                <div class="product-badge">Best Seller</div>
-                <div class="product-image-container">
-                    <div class="bg-blob"></div>
-                    <img src="images/img-one.png" alt="AAIFIT Regular Pad" class="product-image">
-                    <div class="quick-view-overlay">
-                        <button class="quick-view-btn">Quick View</button>
-                        <div class="product-features">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Organic Cotton</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Hypoallergenic</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Breathable</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Aaifit Regular</h3>
-                    <p class="product-description">Organic cotton, perfect for light to medium flow</p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <div class="price">$9.99</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-badge">New</div>
-                <div class="product-image-container">
-                    <div class="bg-blob"></div>
-                    <img src="images/img-one.png" alt="AAIFIT Super Pad" class="product-image">
-                    <div class="quick-view-overlay">
-                        <button class="quick-view-btn">Quick View</button>
-                        <div class="product-features">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Extra Absorption</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Organic Cotton</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Leak Protection</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Aaifit Super</h3>
-                    <p class="product-description">Extra absorption for medium to heavy flow days</p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <div class="price">$12.99</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image-container">
-                    <div class="bg-blob"></div>
-                    <img src="images/img-one.png" alt="AAIFIT Overnight Pad" class="product-image">
-                    <div class="quick-view-overlay">
-                        <button class="quick-view-btn">Quick View</button>
-                        <div class="product-features">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Maximum Protection</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Extra Long</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Comfortable</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Aaifit Overnight</h3>
-                    <p class="product-description">Maximum protection for worry-free nights</p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <div class="price">$14.99</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image-container">
-                    <div class="bg-blob"></div>
-                    <img src="images/img-one.png" alt="AAIFIT Ultra Thin Pad" class="product-image">
-                    <div class="quick-view-overlay">
-                        <button class="quick-view-btn">Quick View</button>
-                        <div class="product-features">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Ultra Thin</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Discreet</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> All-Day Comfort</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Aaifit Ultra Thin</h3>
-                    <p class="product-description">Discreet protection with all-day comfort</p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <div class="price">$10.99</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-badge">Popular</div>
-                <div class="product-image-container">
-                    <div class="bg-blob"></div>
-                    <img src="images/img-one.png" alt="AAIFIT Panty Liners" class="product-image">
-                    <div class="quick-view-overlay">
-                        <button class="quick-view-btn">Quick View</button>
-                        <div class="product-features">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Lightweight</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Everyday Freshness</span>
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> Soft Cover</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-name">Aaifit Panty Liners</h3>
-                    <p class="product-description">Lightweight protection for everyday freshness</p>
-                    <div class="product-actions">
-                        <button class="add-to-cart">Add to Cart</button>
-                        <div class="price">$7.99</div>
-                    </div>
-                </div>
-            </div>
+        <div class="section-header">
+            <span class="subtitle">PREMIUM COLLECTION</span>
+            <h2 class="title">Experience Unmatched Comfort</h2>
+            <p class="description">Discover our innovative products designed for your well-being with premium materials and advanced technology.</p>
         </div>
         
-        <button class="slider-nav next" aria-label="Next products">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-            </svg>
-        </button>
-    </div>
-    
-    <!-- Quick View Modal -->
-    <div class="quick-view-modal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
-                </svg>
+        <div class="portfolio-slider-container">
+            <button class="slider-nav prev" id="prevBtn" aria-label="Previous product">
+                <i class="fas fa-chevron-left"></i>
             </button>
             
-            <div class="modal-body">
-                <div class="modal-product-image">
-                    <img src="" alt="" id="modal-product-img">
+            <div class="portfolio-slider" id="slider">
+                <!-- Product 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Regular" class="portfolio-image" loading="lazy">
+                            <span class="portfolio-badge">BESTSELLER</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Regular</h3>
+                            <span class="portfolio-category">Organic Cotton</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(428)</span>
+                            </div>
+                            <p class="portfolio-description">Premium comfort with organic cotton for light to medium flow days.</p>
+                            
+                            <ul class="product-features">
+                                <li>100% organic cotton</li>
+                                <li>Breathable protection</li>
+                                <li>Ultra-soft texture</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="modal-product-info">
-                    <div class="modal-badge" id="modal-badge"></div>
-                    <h3 id="modal-product-name"></h3>
-                    <div class="modal-price" id="modal-price"></div>
-                    
-                    <div class="product-description" id="modal-description"></div>
-                    
-                    <div class="product-features-list">
-                        <h4>Key Features</h4>
-                        <ul id="modal-features"></ul>
+                <!-- Product 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Super" class="portfolio-image" loading="lazy">
+                            <span class="portfolio-badge">NEW</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Super</h3>
+                            <span class="portfolio-category">Enhanced Absorption</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(196)</span>
+                            </div>
+                            <p class="portfolio-description">Advanced technology for medium to heavy flow with superior comfort.</p>
+                            
+                            <ul class="product-features">
+                                <li>Advanced absorption</li>
+                                <li>Odor control</li>
+                                <li>Extra-long wings</li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="modal-actions">
-                        <button class="modal-add-to-cart">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                            </svg>
-                            Add to Cart
-                        </button>
-                        <div class="quantity-selector">
-                            <button class="quantity-btn minus">-</button>
-                            <span class="quantity">1</span>
-                            <button class="quantity-btn plus">+</button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Overnight" class="portfolio-image" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Overnight</h3>
+                            <span class="portfolio-category">Extended Protection</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">(312)</span>
+                            </div>
+                            <p class="portfolio-description">Maximum coverage for worry-free nights with our longest design.</p>
+                            
+                            <ul class="product-features">
+                                <li>Extra-long coverage</li>
+                                <li>Super absorbent</li>
+                                <li>Leak-proof</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Ultra Thin" class="portfolio-image" loading="lazy">
+                            <span class="portfolio-badge">ULTRA</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Ultra Thin</h3>
+                            <span class="portfolio-category">Discreet Comfort</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(275)</span>
+                            </div>
+                            <p class="portfolio-description">Incredibly thin yet highly absorbent for all-day discreet protection.</p>
+                            
+                            <ul class="product-features">
+                                <li>Only 2mm thin</li>
+                                <li>Rapid-dry surface</li>
+                                <li>Flexible design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Panty Liners" class="portfolio-image" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Panty Liners</h3>
+                            <span class="portfolio-category">Daily Freshness</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(542)</span>
+                            </div>
+                            <p class="portfolio-description">Lightweight protection with breathable organic cotton.</p>
+                            
+                            <ul class="product-features">
+                                <li>Cotton-soft cover</li>
+                                <li>Breathable</li>
+                                <li>Contoured shape</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <button class="slider-nav next" id="nextBtn" aria-label="Next product">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
-    </div>
-</section>
+        
+        <div class="slider-dots" id="sliderDots">
+            <!-- Dots will be added by JavaScript -->
+        </div>
+    </section>
+
+    
+        
+  
+
+
 <!-- PRODUCTS SLIDER SECTION ENDS ================================================ -->
 
 

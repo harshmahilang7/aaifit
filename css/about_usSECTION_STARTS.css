@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 19:31:01
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-04 20:55:30
+ * @Last Modified time: 2025-07-05 05:11:50
  */
 .about-section {
     padding: 5rem 0;
@@ -496,7 +496,7 @@
 }
 
 .about-feature:hover {
-  background: #e0f2f1;
+  background: #d0ecd1;
   transform: translateY(-3px);
 }
 
