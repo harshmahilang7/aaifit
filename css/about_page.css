@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 05:24:33
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-06 01:43:45
+ * @Last Modified time: 2025-07-06 03:24:40
  */
     /* ABOUT PAGE SECTION STARTS */
         /* Mission Section Styles */
@@ -97,6 +97,7 @@
     }
     
     .mission-card h3 {
+        font-weight: 700;
         color: var(--primary-dark);
         margin-bottom: 1rem;
         font-size: 1.4rem;
