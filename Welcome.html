@@ -1,8 +1,8 @@
 <!-- 
   @Author: DASTAN_E_ALAM
-  @Date:   2025-07-02 19:31:01
+  @Date:   2025-07-01 04:59:22
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-05 21:00:06
+  @Last Modified time: 2025-07-06 04:15:16
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -12,16 +12,126 @@
     <meta charset="UTF-8">
 
     <!-- Responsive viewport for mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 
     <!-- Website Title -->
     <title>AAIFIT | Smart Comfort for Every Cycle</title>
+    <!-- GSAP + Draggable CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
     <!-- &#9989; Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- &#9989; Font Awesome Icons (v6) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- &#9989; Custom Website Stylesheet -->
-    <link rel="stylesheet" href="css/css-style.css">
+     <link rel="stylesheet" href="./css/css-style.css">
+     <link rel="stylesheet" href="./css/about_page.css">
+     <link rel="stylesheet" href="./css/about_usSECTION_STARTS.css">
+    <link rel="stylesheet" href="./css/CONTACT.css">
+    
+    <link rel="stylesheet" href="./css/FAQ.css">
+    <link rel="stylesheet" href="./css/FEATURE.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/HeroSection.css">
+    <link rel="stylesheet" href="./css/PRIVACY_POLICY.css">
+    <link rel="stylesheet" href="./css/product_slider.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/Sustainability.css">
+    <link rel="stylesheet" href="./css/term.css">
+    <link rel="stylesheet" href="./css/TESTIMONIAL PAGE.css">
+    <link rel="stylesheet" href="./css/why.css">
+    <link rel="stylesheet" href="css/about_page.css">
+     <link rel="stylesheet" href="./css/footer.css">
+    <style>
+
+      
+ 
+.title {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(2.8rem, 8vw, 5rem); /* Works responsively */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #263238;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.whytitle {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    background: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    cursor: none;
+}
+.whytitle::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(129, 199, 132, 0.4);
+    z-index: -1;
+    transform: skewY(-2deg);
+}
+.h22
+{
+   font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem); /* Scales on small to large screens */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  cursor: none;
+  box-sizing: border-box;
+}
+
+/* #slider {
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+} */
+
+.section-header
+{
+  padding-bottom: 0px;
+}
+
+
+
+    </style>
+    
     <!--  AOS CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- &#9989; Bootstrap 5.3.7 CSS -->
@@ -35,11 +145,16 @@
     <script src="js/3.11.4-ScrollTrigger.min.js"></script>
 
 </head>
-<body>
+<body class="relative" >
     <!-- Custom Cursor -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
-<!-- TOP HEADER SECTION ENDS -->
+
+
+    
+
+
+<!-- Hero Section STARTS-->
 <!-- Header SECTION START -->
 <div class="header-container">
     <header>
@@ -85,86 +200,97 @@
 </div>
 <!-- Header SECTION ENDS -->
 
-<!-- Hero Section STARTS-->
-<section class="hero">
-        <!-- Content -->
-        <div class="hero-content">
-            <h1 class="hero-title">Smart Comfort for Every Cycle</h1>
-          <p class="hero-subtext">Revolutionizing period care with organic comfort, confidence, and care &mdash; made for today&rsquo;s woman.</p>
-            <button class="about-btn cta-button">Order Now</button>
-        </div>
-        <div class="hero-model" ></div>
-</section>
 <!-- Hero Section ENDS-->
 
+<div class="hero">
+  <!-- Background particles would be added here dynamically -->
+  
+  <div class="hero-content">
+    <h1 class="hero-title">Smart Comfort for Every Cycle</h1>
+ <p class="hero-subtext">Revolutionizing period care with organic comfort, confidence, and care &mdash; made for today&rsquo;s woman.</p>    <div class="hero-cta">
+      <a href="#" class="btn btn-primary">Shop Now</a>
+      <!-- <a href="#" class="btn btn-secondary">Learn More</a> -->
+    </div>
+  </div>
+  
+  <div class="hero-model-container">
+    <div class="hero-model">
+      <svg width="100%" height="100%" viewBox="0 0 180 300" preserveAspectRatio="xMidYMid meet">
+        <!-- Your SVG code here -->
+      </svg>
+      <!-- <div class="hero-model-fallback">Premium Protection</div>s -->
+    </div>
+  </div>
+</div>
+
     
-<!-- DOWN CURVE Section STARTS-->
-<section class="last-section">
-      <div class="custom-shape-divider-top-1750672750">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-        </svg>
-      </div> 
-</section>
-<!-- DOWN CURVE Section ENDS-->
 
 <!-- ABOUT US SECTION STARTS -->
+
 <section class="about-section">
-        <div class="container">
-            <div class="about1">
-                <div class="hero-model2" id="aboutImage"></div>
-                <div class="about3" id="aboutContent">
-                    <span class="sus5">Welcome to AaiFit</span>
-                    <h2 class="sus6">Our Story </h2>
-        <p class="sus7">Experience the next generation of feminine care with aaifit's premium sanitary protection. Our innovative designs provide unmatched comfort and reliability when you need it most.</p>
-                   
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                            <span>Organic Materials</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                            <span>12-Hour Protection</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                            <span>Hypoallergenic</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-tint"></i></div>
-                            <span>Ultra Absorbent</span>
-                        </div>
-                    </div>
-                    
-                 <a href="Products.html">
-                       <button class="about-btn">
-                        Explore Products <i class="fas fa-arrow-right"></i>
-                    </button>
-                 </a>
+    <div class="container">
+        <div class="about1">
+            <div class="hero-model2" id="aboutImage">
+                <div class="image-overlay"></div>
+                <div class="floating-shapes">
+                    <div class="shape shape1"></div>
+                    <div class="shape shape2"></div>
                 </div>
             </div>
+            <div class="about3" id="aboutContent">
+                <span class="sus5">Welcome to AaiFit</span>
+                <br>
+                <h2 class="sus6">Our Story</h2>
+                <p class="sus7">Experience the next generation of feminine care with aaifit's premium sanitary protection. Our innovative designs provide unmatched comfort and reliability when you need it most.</p>
+                
+                <div class="about-features">
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-seedling"></i></div>
+            <span>Organic Materials</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-stopwatch"></i></div>
+            <span>12-Hour Protection</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <span>Hypo allergenic</span>
+          </div>
+          <div class="about-feature">
+            <div class="about-icon"><i class="fas fa-water"></i></div>
+            <span>Ultra Absorbent</span>
+          </div>
         </div>
+               
+
+                   <div class="cta-container" data-scroll data-scroll-delay="300">
+      <a href="Products.html" class="cta-button">
+        <span>Explore Products</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
 <!-- ABOUT US SECTION ENDS -->
-<!-- /* CURVE UP */ STARTS -->
-<section>
-        <div class="up1">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,
-                        931.37,112.77,600,112.77Z" class="shape-fill" stroke="none"></path>
-            </svg>
-        </div>
-</section>
-<!-- /* CURVE UP */ ENDS -->
+
 
 <!-- WHY US SECTION STARTS =========================================================== -->
 <section class="why-section">
     <div class="why1">
-        <div class="why2">
-            <div class="why3">Our Unique Advantages</div>
-            <h2 class="why4">What Makes Aaifit Different</h2>
-        </div>
+        <div class="section-header">
+        <div class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Unique Advantages</div>
+        <br>
+        <span class="h22">What Makes <h2 class="whytitle">Aaifit </h2> Different</span>
+        
+        <!-- <div class="divider">
+             <div class="line"></div>  
+        </div> -->
+    </div>
         
         <div class="why5">
             <div class="why6">
@@ -204,112 +330,318 @@
 </section>
 
     
-<!-- DOWN CURVE Section STARTS-->
-<section class="last-section">
-      <div class="custom-shape-divider-top-1750672750">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-        </svg>
-      </div> 
-</section>
-<!-- DOWN CURVE Section ENDS-->
+
 
 <!-- WHY US SECTION ENDS =========================================================== -->
 
 
-<!-- PRODUCTS SLIDER SECTION  STARTS ================================================ -->
-
-<section class="ps1">
-        <div class="why22">
-            <div class="why33">Our Products</div>
-            <h2 class="why44">Aaifit Premium Products</h2>
+ <section class="portfolio-section">
+        <!-- Floating background elements -->
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+        
+        <div class="section-header">
+            <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Products</span><br>
+            <h2 class="title">Aaifit Premium Products</h2>
+            <p class="description">Discover our innovative products designed for your well-being with premium materials and advanced technology.</p>
         </div>
         
-        <div class="ps3">
-            <div class="ps5">
-                <div class="ps6">
-                    <div class="ps7">
-                        <div class="ps8">
-                            <div class="ps9">
-                                <img src="images/img-one.png" alt="AAIFIT Regular Pad">
+        <div class="portfolio-slider-container">
+            <button class="slider-nav prev" id="prevBtn" aria-label="Previous product">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="portfolio-slider" id="slider">
+                <!-- Product 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Regular" class="portfolio-image" loading="lazy">
+                            <span class="portfolio-badge">BESTSELLER</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Regular</h3>
+                            <span class="portfolio-category">Organic Cotton</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(428)</span>
                             </div>
+                            <p class="portfolio-description">Premium comfort with organic cotton for light to medium flow days.</p>
+                            
+                            <ul class="product-features">
+                                <li>100% organic cotton</li>
+                                <li>Breathable protection</li>
+                                <li>Ultra-soft texture</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="ps10">
-                    <h3 class="ps11">Aaifit Regular</h3>
-                    <p class="ps12">Organic cotton, perfect for light to medium flow</p>
+                
+                <!-- Product 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Super" class="portfolio-image" loading="lazy">
+                            <span class="portfolio-badge">NEW</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Super</h3>
+                            <span class="portfolio-category">Enhanced Absorption</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(196)</span>
+                            </div>
+                            <p class="portfolio-description">Advanced technology for medium to heavy flow with superior comfort.</p>
+                            
+                            <ul class="product-features">
+                                <li>Advanced absorption</li>
+                                <li>Odor control</li>
+                                <li>Extra-long wings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Overnight" class="portfolio-image" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Overnight</h3>
+                            <span class="portfolio-category">Extended Protection</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">(312)</span>
+                            </div>
+                            <p class="portfolio-description">Maximum coverage for worry-free nights with our longest design.</p>
+                            
+                            <ul class="product-features">
+                                <li>Extra-long coverage</li>
+                                <li>Super absorbent</li>
+                                <li>Leak-proof</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Ultra Thin" class="portfolio-image" loading="lazy">
+                            <span class="portfolio-badge">ULTRA</span>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Ultra Thin</h3>
+                            <span class="portfolio-category">Discreet Comfort</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(275)</span>
+                            </div>
+                            <p class="portfolio-description">Incredibly thin yet highly absorbent for all-day discreet protection.</p>
+                            
+                            <ul class="product-features">
+                                <li>Only 2mm thin</li>
+                                <li>Rapid-dry surface</li>
+                                <li>Flexible design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image-container">
+                            <img src="images/img-one.png" 
+                                 alt="Aaifit Panty Liners" class="portfolio-image" loading="lazy">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Aaifit Panty Liners</h3>
+                            <span class="portfolio-category">Daily Freshness</span>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(542)</span>
+                            </div>
+                            <p class="portfolio-description">Lightweight protection with breathable organic cotton.</p>
+                            
+                            <ul class="product-features">
+                                <li>Cotton-soft cover</li>
+                                <li>Breathable</li>
+                                <li>Contoured shape</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="ps5">
-                <div class="ps6">
-                    <div class="ps7">
-                        <div class="ps8">
-                            <div class="ps9">
-                                <img src="images/img-one.png" alt="AAIFIT Super Pad">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ps10">
-                    <h3 class="ps11">Aaifit Super</h3>
-                    <p class="ps12">Extra absorption for medium to heavy flow days</p>
-                </div>
-            </div>
-            
-            <div class="ps5">
-                <div class="ps6">
-                    <div class="ps7">
-                        <div class="ps8">
-                            <div class="ps9">
-                                <img src="images/img-one.png" alt="AAIFIT Overnight Pad">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ps10">
-                    <h3 class="ps11">Aaifit Overnight</h3>
-                    <p class="ps12">Maximum protection for worry-free nights</p>
-                </div>
-            </div>
-            
-            <div class="ps5">
-                <div class="ps6">
-                    <div class="ps7">
-                        <div class="ps8">
-                            <div class="ps9">
-                                <img src="images/img-one.png" alt="AAIFIT Ultra Thin Pad">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ps10">
-                    <h3 class="ps11">Aaifit Ultra Thin</h3>
-                    <p class="ps12">Discreet protection with all-day comfort</p>
-                </div>
-            </div>
-            
-            <div class="ps5">
-                <div class="ps6">
-                    <div class="ps7">
-                        <div class="ps8">
-                            <div class="ps9">
-                                <img src="images/img-one.png" alt="AAIFIT Panty Liners">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ps10">
-                    <h3 class="ps11">Aaifit Panty Liners</h3>
-                    <p class="ps12">Lightweight protection for everyday freshness</p>
-                </div>
-            </div>
+            <button class="slider-nav next" id="nextBtn" aria-label="Next product">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
+        
+        <div class="slider-dots" id="sliderDots">
+            <!-- Dots will be added by JavaScript -->
+        </div>
+    </section>
+
+
+<!-- Products Showcase Section -->
+  
+<section class="py-12 md:py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8 md:mb-12">
+      <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs md:text-sm font-semibold mb-3">Our Solutions</span>
+      <h2 class="font-playfair text-2xl md:text-4xl font-bold mb-3 md:mb-4">Complete Menstrual Hygiene Solutions</h2>
+      <p class="max-w-2xl mx-auto text-gray-600 text-sm md:text-base px-2">From convenient access to safe disposal, we provide end-to-end solutions for menstrual hygiene management.</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
+      <!-- Vending Machines Card -->
+      <div class="bg-white rounded-xl shadow-md md:shadow-lg overflow-hidden flex flex-col h-full">
+        <div class="h-48 md:h-64 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4 md:p-6">
+          <img src="https://via.placeholder.com/400x300?text=Vending+Machines" alt="Sanitary Napkin Vending Machines" class="max-h-full max-w-full">
+        </div>
+        <div class="p-4 md:p-6 flex-grow">
+          <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Sanitary Napkin Vending Machines</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-coins text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Coin-Operated</h4>
+                <p class="text-xs md:text-sm text-gray-600">Manual & automatic options</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-bolt text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Electric Models</h4>
+                <p class="text-xs md:text-sm text-gray-600">With digital displays</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-microphone text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Voice Guidance</h4>
+                <p class="text-xs md:text-sm text-gray-600">Multi-language support</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-box-open text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">30-100 Capacity</h4>
+                <p class="text-xs md:text-sm text-gray-600">Various sizes available</p>
+              </div>
+            </div>
+          </div>
+          <a href="products.html#vending" class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg font-semibold transition w-full text-center text-sm md:text-base">View Vending Machines</a>
+        </div>
+      </div>
+
+      <!-- Incinerators Card -->
+      <div class="bg-white rounded-xl shadow-md md:shadow-lg overflow-hidden flex flex-col h-full">
+        <div class="h-48 md:h-64 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4 md:p-6">
+          <img src="https://via.placeholder.com/400x300?text=Incinerators" alt="Sanitary Napkin Incinerators" class="max-h-full max-w-full">
+        </div>
+        <div class="p-4 md:p-6 flex-grow">
+          <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Sanitary Napkin Incinerators</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-fire text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Efficient Burning</h4>
+                <p class="text-xs md:text-sm text-gray-600">100-400 pads/day capacity</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-filter text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Smoke Control</h4>
+                <p class="text-xs md:text-sm text-gray-600">Activated carbon filters</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-robot text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Automatic</h4>
+                <p class="text-xs md:text-sm text-gray-600">Timer-controlled operation</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-3">
+                <i class="fas fa-shield-alt text-green-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-sm md:text-base">Double Insulation</h4>
+                <p class="text-xs md:text-sm text-gray-600">For maximum safety</p>
+              </div>
+            </div>
+          </div>
+          <a href="products.html#incinerators" class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg font-semibold transition w-full text-center text-sm md:text-base">View Incinerators</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 md:mt-12 text-center">
+      <a href="products.html" class="inline-block border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold transition text-sm md:text-base">View All Products</a>
+    </div>
+  </div>
 </section>
 
+<!-- PRODUCTS SLIDER SECTION ENDS ================================================ -->
 
-<!-- PRODUCTS SLIDER SECTION ENDS================================================ -->
+
 <!-- /* CURVE UP */ STARTS -->
 <section>
         <div class="up1">
@@ -321,69 +653,76 @@
 </section>
 <!-- /* CURVE UP */ ENDS -->
 
+
+
+
 <!-- Sustainability SECTION  STARTS====================================================== -->
-<section class="sus1">
-  <div class="sus2">
-    <div class="sus3">
-      
-      
+<section class="sustainability-section">
+  <div class="sustainability-container">
+    <div class="sustainability-grid">
       <!-- Cards Right -->
-      <div class="sus8">
+      <div class="features-container">
         <!-- Feature 1 -->
-        <div class="sus9" data-scroll>
-          <div class="sus10">
-            <div class="sus11">01</div>
-            <div class="sus12"></div>
+        <div class="feature-card" data-scroll>
+          <div class="feature-header">
+            <div class="feature-number">01</div>
+            <div class="feature-divider"></div>
           </div>
-          <h3 class="sus13">Organic Cotton</h3>
-          <p class="sus14">Grown without pesticides for your health and the planet's</p>
-          <div class="sus15"></div>
+          <h3 class="feature-title">Organic Cotton</h3>
+          <p class="feature-description">Grown without pesticides for your health and the planet's</p>
+          <div class="feature-highlight"></div>
+          <div class="feature-icon">🌱</div>
         </div>
         
         <!-- Feature 2 -->
-        <div class="sus9" data-scroll data-scroll-delay="100">
-          <div class="sus10">
-            <div class="sus11">02</div>
-            <div class="sus12"></div>
+        <div class="feature-card" data-scroll data-scroll-delay="100">
+          <div class="feature-header">
+            <div class="feature-number">02</div>
+            <div class="feature-divider"></div>
           </div>
-          <h3 class="sus13">Biodegradable</h3>
-          <p class="sus14">Breaks down naturally in 6-12 months</p>
-          <div class="sus15"></div>
+          <h3 class="feature-title">Biodegradable</h3>
+          <p class="feature-description">Breaks down naturally in 6-12 months</p>
+          <div class="feature-highlight"></div>
+          <div class="feature-icon">♻️</div>
         </div>
         
         <!-- Feature 3 -->
-        <div class="sus9" data-scroll data-scroll-delay="200">
-          <div class="sus10">
-            <div class="sus11">03</div>
-            <div class="sus12"></div>
+        <div class="feature-card" data-scroll data-scroll-delay="200">
+          <div class="feature-header">
+            <div class="feature-number">03</div>
+            <div class="feature-divider"></div>
           </div>
-          <h3 class="sus13">Plastic-Free</h3>
-          <p class="sus14">Zero plastic in pads or packaging</p>
-          <div class="sus15"></div>
+          <h3 class="feature-title">Plastic-Free</h3>
+          <p class="feature-description">Zero plastic in pads or packaging</p>
+          <div class="feature-highlight"></div>
+          <div class="feature-icon">🚯</div>
         </div>
       </div>
-      <div class="sus4">
-        <span class="sus5">Our Green Promise</span>
-        <h2 class="sus6">Sustainable <br>Period Care</h2>
-        <p class="sus7">Better for your body. Kinder to the Earth.</p>
+      
+      <!-- Content Left -->
+      <div class="content-container">
+        <span class="section-tag">Our Green Promise</span>
+        <h2 class="section-title">Sustainable <br>Period Care</h2>
+        <p class="section-subtitle">Better for your body. Kinder to the Earth.</p>
         
-         <!-- <div class="hero-model2" id="aboutImage"></div> -->
-       <div class="sus-img">
-         <img src="images/img-sus.jpeg" alt="">
-       </div>
-        <div class="sus16">
-          <div class="sus17">
-            <div class="sus18">
-              <div class="sus19">80%</div>
-              <div class="sus20">Minimal water used</div>
+        <div class="image-container">
+          <img src="images/img-sus.jpeg" alt="Sustainable period products" loading="lazy">
+          <div class="image-overlay"></div>
+        </div>
+        
+        <div class="stats-container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">80%</div>
+              <div class="stat-label">Minimal water used</div>
             </div>
-            <div class="sus18">
-              <div class="sus19">60%</div>
-              <div class="sus20">Lower carbon footprint</div>
+            <div class="stat-item">
+              <div class="stat-value">60%</div>
+              <div class="stat-label">Lower carbon footprint</div>
             </div>
-            <div class="sus18">
-              <div class="sus19">100%</div>
-              <div class="sus20">Compostable packaging</div>
+            <div class="stat-item ">
+              <div class="stat-value">100%</div>
+              <div class="stat-label">Compostable packaging</div>
             </div>
           </div>
         </div>
@@ -391,18 +730,20 @@
     </div>
     
     <!-- CTA Button -->
-    <div class="sus21-container" data-scroll data-scroll-delay="300">
-      <a href="Features.html" class="sus21">
+    <div class="cta-container" data-scroll data-scroll-delay="300">
+      <a href="Features.html" class="cta-button">
         <span>Discover More</span>
-        <svg viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
       </a>
     </div>
   </div>
   
   <!-- Decorative Elements -->
-  <div class="sus22">
-    <div class="sus23"></div>
-    <div class="sus24"></div>
+  <div class="decorative-elements">
+    <div class="circle-decor circle-1"></div>
+    <div class="circle-decor circle-2"></div>
+    <div class="leaf-decor leaf-1">🍃</div>
+    <div class="leaf-decor leaf-2">🍃</div>
   </div>
 </section>
 <!-- Sustainability SECTION ENDS ====================================================== -->
@@ -418,160 +759,168 @@
 <!-- DOWN CURVE Section ENDS-->
 
 <!-- FAQ SECTION STARTS================================================================ -->
-<section class="faq-container container-fluid">
+    <!-- FAQ SECTION -->
+   <!-- FAQ SECTION -->
+    <section class="faq-container container-fluid">
+        <!-- Decorative Elements -->
+        <i class="faq-decoration faq-leaf1 fas fa-leaf"></i>
+        <i class="faq-decoration faq-leaf2 fas fa-leaf"></i>
+        <div class="faq-decoration faq-dots dots1"></div>
+        <div class="faq-decoration faq-dots dots2"></div>
 
-        
-        <div class="why22">
-            <div class="why33">FAQ's</div>
-            <h2 class="why44 ">Frequenlty Asked Questions</h2>
-        </div>
+        <div class="container">
+            <div class="faq-header">
+                <div class="faq-subtitle">FAQ's</div>
+                <div class="space"></div>
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-intro">Find answers to common questions about our products and services. If you can't find what you're looking for, our team is always ready to help.</p>
+            </div>
 
-        <div class="faq1">
-            <div class="faq-question">
-                <i class="fas fa-question-circle pe-2"></i>
-                <span>What makes Aaifit pads different from other brands?</span>
-                <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="faq-answer">
-                <p>Aaifit pads revolutionize period care with our patented BioComfort&trade; technology. Unlike conventional pads, we use:</p>
-                <ul>
-                    <li>100% certified organic cotton top layer</li>
-                    <li>Plant-based absorption core (bamboo + corn starch)</li>
-                    <li>Breathable, hypoallergenic backing</li>
-                    <li>Chlorine-free, fragrance-free, and dye-free materials</li>
-                </ul>
-                <p>Our 3D contour design adapts to your body for leak-proof protection without bulk.</p>
-            </div>
-        </div>
-
-        <div class="faq1">
-            <div class="faq-question">
-                <i class="fas fa-recycle  pe-2"></i>
-                <span>Are Aaifit pads biodegradable and eco-friendly?</span>
-                <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="faq-answer">
-                <p>Aaifit leads the industry in sustainable period products:</p>
-                <ul>
-                    <li><strong>95% biodegradable</strong> within 6 months in composting conditions</li>
-                    <li>Plastic-free packaging made from recycled materials</li>
-                    <li>Carbon-neutral manufacturing process</li>
-                    <li>Partnered with reforestation programs - every purchase plants a tree</li>
-                </ul>
-                <p>We're proud to be certified by the Global Organic Textile Standard (GOTS) and EcoCert.</p>
-            </div>
-        </div>
-
-        <div class="faq1">
-            <div class="faq-question">
-                <i class="fas fa-heart  pe-2"></i>
-                <span>Can Aaifit pads help with sensitive skin or allergies?</span>
-                <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="faq-answer">
-                <p>Absolutely! Aaifit pads are specially formulated for sensitive skin:</p>
-                <ul>
-                    <li>Dermatologist-tested and approved</li>
-                    <li>pH-balanced to maintain your natural flora</li>
-                    <li>No latex, perfumes, or common irritants</li>
-                    <li>Breathable design reduces moisture and irritation</li>
-                </ul>
-                <p>In clinical trials, 92% of participants with sensitive skin reported reduced irritation when switching to Aaifit.</p>
-            </div>
-        </div>
-
-        <div class="faq1">
-            <div class="faq-question">
-                <i class="fas fa-shield-alt  pe-2"></i>
-                <span>How does Aaifit ensure product safety and quality?</span>
-                <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="faq-answer">
-                <p>Your safety is our top priority. We implement:</p>
-                <ul>
-                    <li>FDA-approved manufacturing facilities</li>
-                    <li>Rigorous quality control at every production stage</li>
-                    <li>Third-party laboratory testing for each batch</li>
-                    <li>Sterilization using gamma radiation (no chemical sterilants)</li>
-                    <li>Traceability from farm to finished product</li>
-                </ul>
-                <p>All materials meet or exceed international safety standards for feminine hygiene products.</p>
-            </div>
-        </div>
-
-        <div class="faq1">
-            <div class="faq-question">
-                <i class="fas fa-tint  pe-2"></i>
-                <span>What absorbency options does Aaifit offer?</span>
-                <div class="faq-icon">
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="faq-answer">
-                <p>Aaifit offers a complete range for every flow:</p>
-                <div class="absorbency-grid">
-                    <div class="absorbency-level">
-                        <strong>Light</strong>
-                        <p>For light days and spotting</p>
-                        <p>3-4 hour protection</p>
+            <div class="faq-wrapper">
+                <div class="faq-item animate-fade-in delay-1">
+                    <div class="faq-question">
+                        <div class="faq-question-content">
+                            <i class="fas fa-question-circle"></i>
+                            <span>What makes Aaifit pads different from other brands?</span>
+                        </div>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="absorbency-level">
-                        <strong>Regular</strong>
-                        <p>For moderate flow</p>
-                        <p>4-6 hour protection</p>
-                    </div>
-                    <div class="absorbency-level">
-                        <strong>Super</strong>
-                        <p>For heavy flow days</p>
-                        <p>6-8 hour protection</p>
-                    </div>
-                    <div class="absorbency-level">
-                        <strong>Overnight</strong>
-                        <p>Maximum protection</p>
-                        <p>8-10 hour protection</p>
+                    <div class="faq-answer">
+                        <p>Aaifit pads revolutionize period care with our patented BioComfort™ technology. Unlike conventional pads, we use:</p>
+                        <ul>
+                            <li>100% certified organic cotton top layer</li>
+                            <li>Plant-based absorption core (bamboo + corn starch)</li>
+                            <li>Breathable, hypoallergenic backing</li>
+                            <li>Chlorine-free, fragrance-free, and dye-free materials</li>
+                        </ul>
+                        <p>Our 3D contour design adapts to your body for leak-proof protection without bulk.</p>
                     </div>
                 </div>
-                <p>All sizes feature our QuickDry technology to keep you feeling fresh.</p>
+
+                <div class="faq-item animate-fade-in delay-2">
+                    <div class="faq-question">
+                        <div class="faq-question-content">
+                            <i class="fas fa-recycle"></i>
+                            <span>Are Aaifit pads biodegradable and eco-friendly?</span>
+                        </div>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aaifit leads the industry in sustainable period products:</p>
+                        <ul>
+                            <li><strong>95% biodegradable</strong> within 6 months in composting conditions</li>
+                            <li>Plastic-free packaging made from recycled materials</li>
+                            <li>Carbon-neutral manufacturing process</li>
+                            <li>Partnered with reforestation programs - every purchase plants a tree</li>
+                        </ul>
+                        <p>We're proud to be certified by the Global Organic Textile Standard (GOTS) and EcoCert.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-fade-in delay-3">
+                    <div class="faq-question">
+                        <div class="faq-question-content">
+                            <i class="fas fa-heart"></i>
+                            <span>Can Aaifit pads help with sensitive skin or allergies?</span>
+                        </div>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Aaifit pads are specially formulated for sensitive skin:</p>
+                        <ul>
+                            <li>Dermatologist-tested and approved</li>
+                            <li>pH-balanced to maintain your natural flora</li>
+                            <li>No latex, perfumes, or common irritants</li>
+                            <li>Breathable design reduces moisture and irritation</li>
+                        </ul>
+                        <p>In clinical trials, 92% of participants with sensitive skin reported reduced irritation when switching to Aaifit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-fade-in delay-4">
+                    <div class="faq-question">
+                        <div class="faq-question-content">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>How does Aaifit ensure product safety and quality?</span>
+                        </div>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your safety is our top priority. We implement:</p>
+                        <ul>
+                            <li>FDA-approved manufacturing facilities</li>
+                            <li>Rigorous quality control at every production stage</li>
+                            <li>Third-party laboratory testing for each batch</li>
+                            <li>Sterilization using gamma radiation (no chemical sterilants)</li>
+                            <li>Traceability from farm to finished product</li>
+                        </ul>
+                        <p>All materials meet or exceed international safety standards for feminine hygiene products.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-fade-in delay-5">
+                    <div class="faq-question">
+                        <div class="faq-question-content">
+                            <i class="fas fa-tint"></i>
+                            <span>What absorbency options does Aaifit offer?</span>
+                        </div>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aaifit offers a complete range for every flow:</p>
+                        <div class="absorbency-grid">
+                            <div class="absorbency-level">
+                                <strong>Light</strong>
+                                <p>For light days and spotting</p>
+                                <p>3-4 hour protection</p>
+                            </div>
+                            <div class="absorbency-level">
+                                <strong>Regular</strong>
+                                <p>For moderate flow</p>
+                                <p>4-6 hour protection</p>
+                            </div>
+                            <div class="absorbency-level">
+                                <strong>Super</strong>
+                                <p>For heavy flow days</p>
+                                <p>6-8 hour protection</p>
+                            </div>
+                            <div class="absorbency-level">
+                                <strong>Overnight</strong>
+                                <p>Maximum protection</p>
+                                <p>8-10 hour protection</p>
+                            </div>
+                        </div>
+                        <p>All sizes feature our QuickDry technology to keep you feeling fresh.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta animate-fade-in delay-6">
+                <h3>Still have questions?</h3>
+                <p>Our menstrual health experts are here to help you 24/7 with any questions or concerns you may have.</p>
+                <a href="Contact.html" class="faq-cta-btn">
+                    Contact Our Support Team <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
-
-        <div class="faq-cta container">
-            <h3>Still have questions?</h3>
-            <p>Our menstrual health experts are here to help you 24/7</p>
-            <a href="Contact.html" class="faq-cta-btn">Contact Our Support Team</a>
-        </div>
-</section>
+    </section>
 <!-- FAQ SECTION ENDS================================================================ -->
  
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick-slick.min.js"></script>
 
-<!-- TOP FOOTER SECTION STARTS================================================== -->
-<script src="js/js-bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="js/js-script.js"></script>
- <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/slick-slick.min.js"></script>
-    <script src="js/dist-aos.js"></script>
-</body>
-</html><!-- TOP FOOTER SECTION ENDS================================================== --><!-- /* CURVE UP green*/ STARTS --><html><section>
-        <div class="up11">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,
-                        931.37,112.77,600,112.77Z" class="shape-fill" stroke="none"></path>
-            </svg>
-        </div>
-</section>
-<!-- /* CURVE UP */ ENDS -->
-<!-- FOOTER SECTION STARTS================================================== -->
 
+<!-- FOOTER SECTION STARTS================================================== -->
 <footer class="footer">
         <div class="footer-container">
             <div class="footer-section footer-about">
@@ -598,6 +947,10 @@
                     <li><a href="Terms.html"><i class="fas fa-chevron-right"></i> Terms &amp; Conditions</a></li>
                 </ul>
             </div>
+
+            
+
+            
 
             <div class="footer-section footer-contact">
                 <h3 class="footer-heading">Contact Us</h3>
@@ -631,4 +984,38 @@
 <!-- FOOTER SECTION ENDS================================================== -->
 
 
+
+<script src="js/js-bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="js/js-script.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick-slick.min.js"></script>
+<script src="js/dist-aos.js"></script>
+
+<script src="js/head.js"></script>
+<script src="js/head.js"></script>
+<script src="js/about_us_section.js"></script>
+<script src="js/product_slider.js"></script>
+<script src="js/faq.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cta = document.querySelector('.cta-container');
+
+    const onScroll = () => {
+      const rect = cta.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+      if (isVisible) {
+        cta.classList.add('visible');
+        window.removeEventListener('scroll', onScroll); // Remove after trigger
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // Check immediately on load too
+  });
+</script>
+
+
+</body>
 </html>
