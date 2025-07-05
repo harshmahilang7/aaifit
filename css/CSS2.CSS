@@ -1,0 +1,26 @@
+/**
+ * @Author: DASTAN_E_ALAM
+ * @Date:   2025-07-01 04:59:16
+ * @Last Modified by:   DASTAN_E_ALAM
+ * @Last Modified time: 2025-07-05 14:37:41
+ */
+:root {
+  --primary-dark: #1b5e20;
+  --primary-medium: #2e7d32;
+  --primary-light: #a5d6a7;
+  --primary-extra-light: #e8f5e9;
+  --text-dark: #1b5e20;
+  --text-medium: #2e7d32;
+  --text-light: #4a8c4a;
+  --white: #ffffff;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.2);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  /* #54ac55 --dark */
+  /* #82cd01 --light */
+}
+
+
+
+
+

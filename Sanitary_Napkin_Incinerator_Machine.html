@@ -1,0 +1,1073 @@
+<!-- 
+  @Author: DASTAN_E_ALAM
+  @Date:   2025-07-04 20:20:08
+  @Last Modified by:   DASTAN_E_ALAM
+  @Last Modified time: 2025-07-05 14:35:18
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoBurn - Premium Sanitary Napkin Incinerators</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="js/head.js"></script>
+
+  <link rel="stylesheet" href="./css/header.css">
+   <link rel="stylesheet" href="./css/CSS2.CSS">
+  <link rel="stylesheet" href="./css/footer.css">
+  <style>
+   
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(240deg, #f8f9fa 0%, #e8f5e9 100%);
+      @apply text-gray-800;
+      scroll-behavior: smooth;
+    }
+    
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .hero-bg {
+      background: linear-gradient(135deg, #0d3b13 0%, #1b5e20 100%);
+    }
+    
+    .smoke-control-bg {
+      background: linear-gradient(135deg, #0a2e0e 0%, #0d3b13 100%);
+    }
+    
+    .product-card {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      @apply border border-gray-100;
+      background: white;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .swiper-pagination-bullet {
+      @apply bg-gray-400 opacity-100;
+    }
+    
+    .swiper-pagination-bullet-active {
+      @apply bg-green-600;
+    }
+    
+    .swiper-button-next, .swiper-button-prev {
+      @apply text-green-600;
+    }
+    
+    .highlight {
+      @apply inline-flex items-center bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-medium mr-2 mb-2;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      @apply bg-gray-100;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      @apply bg-green-600 rounded-full;
+    }
+    
+    /* Hero section clip path */
+    .hero-clip {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    
+    @media (max-width: 768px) {
+      .hero-clip {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+      }
+    }
+    
+    /* Smooth transitions */
+    a, button, input, textarea {
+      @apply transition-all duration-300;
+    }
+    
+    /* Mobile menu animation */
+    .mobile-menu {
+      transform: translateX(100%);
+      @apply transition-transform duration-300 ease-in-out;
+    }
+    
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+    
+    /* Filter badge */
+    .filter-badge {
+      @apply absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg hidden md:flex items-center;
+    }
+  </style>
+</head>
+
+<body class="relative">
+  <!-- Navigation -->
+     <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+
+    
+
+
+<!-- Hero Section STARTS-->
+<!-- Header SECTION START -->
+<div class="header-container">
+    <header>
+        <a href="Welcome.html">
+            <img src="images/img-logo.png" alt="AIFIT Logo" class="logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="Welcome.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <ul>
+        <li><a href="Welcome.html" class="mobile-link">Home</a></li>
+        <li><a href="About.html" class="mobile-link">About Us</a></li>
+        <li><a href="Products.html" class="mobile-link">Products</a></li>
+        <li><a href="Features.html" class="mobile-link">Features</a></li>
+        <li><a href="Testimonials.html" class="mobile-link">Testimonials</a></li>
+        <li><a href="Contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+</div>
+<!-- Header SECTION ENDS -->
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg text-white pt-32 pb-40 px-4 relative overflow-hidden hero-clip">
+    <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Premium Sanitary Napkin Incinerators</h1>
+          <p class="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">Hygienic, eco-friendly solutions for safe disposal of sanitary waste with advanced smoke control technology and odor-free operation.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#products" class="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-lg text-center">Explore Models</a>
+            <a href="#contact" class="inline-block border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-green-700 transition transform hover:-translate-y-1 text-center">Contact Sales</a>
+          </div>
+        </div>
+        <div class="hidden lg:flex justify-center">
+          <img src="https://via.placeholder.com/600x500?text=EcoBurn+Incinerator" alt="EcoBurn Incinerator" class="rounded-xl shadow-2xl max-w-full h-auto" style="max-height: 500px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-20">
+    <!-- Features -->
+    <section id="features" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div class="bg-white p-8 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-2 border-t-4 border-green-500">
+        <div class="text-green-600 text-4xl mb-6">
+          <i class="fas fa-fire"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Efficient Combustion</h3>
+        <p class="text-gray-600">Complete burning of sanitary waste with capacities from 100 to 400 pads per day.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-2 border-t-4 border-green-500">
+        <div class="text-green-600 text-4xl mb-6">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Fully Automatic</h3>
+        <p class="text-gray-600">Timer-controlled operation with auto shut-off for safe, hands-free use.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-2 border-t-4 border-green-500">
+        <div class="text-green-600 text-4xl mb-6">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Double Insulation</h3>
+        <p class="text-gray-600">Ceramic fiber and glass fiber blanket for maximum safety and protection.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-2 border-t-4 border-green-500">
+        <div class="text-green-600 text-4xl mb-6">
+          <i class="fas fa-wind"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Smoke Control</h3>
+        <p class="text-gray-600">Activated carbon filters for effective smoke and odor elimination.</p>
+      </div>
+    </section>
+
+    <!-- Standard Models Slider -->
+    <section id="products" class="mb-20">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Products</span>
+        <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Standard Incinerator Models</h2>
+        <p class="max-w-2xl mx-auto text-gray-600">Our range of high-capacity sanitary napkin incinerators for various usage needs.</p>
+      </div>
+
+      <div class="swiper standard-models-swiper relative">
+        <div class="swiper-wrapper pb-12">
+          <!-- EB-100 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Standard</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=EB-100" alt="EB-100" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">Model EB-100</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">100 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 800W Heater</div>
+                  <div class="highlight"><i class="fas fa-clock mr-1"></i> 15-20 min cycle</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 205×205×435 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 11 kg</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 4 pads per cycle (80-100/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EB-200 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Popular</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=EB-200" alt="EB-200" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">Model EB-200</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">200 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 800W Heater</div>
+                  <div class="highlight"><i class="fas fa-clock mr-1"></i> 15-20 min cycle</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 255×255×450 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 13 kg</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 6 pads per cycle (180-200/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EB-300 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Premium</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=EB-300" alt="EB-300" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">Model EB-300</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">300 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 800W Heater</div>
+                  <div class="highlight"><i class="fas fa-clock mr-1"></i> 20-25 min cycle</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 275×275×505 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 15 kg</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 8 pads per cycle (280-300/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+           <!-- EB-400 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">High Capacity</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=EB-400" alt="EB-400" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">Model EB-400</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">400 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 800W Heater</div>
+                  <div class="highlight"><i class="fas fa-clock mr-1"></i> 20-25 min cycle</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 305×305×525 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 18 kg</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 10 pads per cycle (380-400/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next hidden sm:flex"></div>
+        <div class="swiper-button-prev hidden sm:flex"></div>
+      </div>
+    </section>
+
+    <!-- Smoke Control Models Slider -->
+    <section class="mb-20">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Advanced Technology</span>
+        <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Smoke Control Models</h2>
+        <p class="max-w-2xl mx-auto text-gray-600">Advanced incinerators with activated carbon filters for superior smoke and odor control.</p>
+      </div>
+
+      <div class="swiper smoke-control-swiper relative">
+        <div class="swiper-wrapper pb-12">
+          <!-- SC EB-100 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Smoke Control</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=SC+EB-100" alt="SC EB-100" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">SC Model EB-100</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">100 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-filter mr-1"></i> Carbon Filter</div>
+                  <div class="highlight"><i class="fas fa-fan mr-1"></i> Exhaust Fan</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 205×205×335 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 14 kg (Main: 11kg + Filter: 3kg)</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 3 pads per cycle (80-100/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SC EB-200 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Smoke Control</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=SC+EB-200" alt="SC EB-200" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">SC Model EB-200</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">200 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-filter mr-1"></i> Carbon Filter</div>
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 1400W Heater</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 255×255×450 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 13 kg (Main) + 3kg (Filter)</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 6 pads per cycle (180-200/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SC EB-300 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Smoke Control</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=SC+EB-300" alt="SC EB-300" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">SC Model EB-300</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">300 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-filter mr-1"></i> Carbon Filter</div>
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 1400W Heater</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 255×255×450 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 13 kg (Main) + 3kg (Filter)</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 6 pads per cycle (180-200/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+           <!-- SC EB-400 -->
+          <div class="swiper-slide px-2">
+            <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-semibold z-10">Smoke Control</div>
+              <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
+                <img src="https://via.placeholder.com/300x300?text=SC+EB-400" alt="SC EB-400" class="max-h-full max-w-full transition-transform duration-500 hover:scale-105">
+              </div>
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-bold mb-2">SC Model EB-400</h3>
+                <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">400 Pads/Day Capacity</span>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="highlight"><i class="fas fa-filter mr-1"></i> Carbon Filter</div>
+                  <div class="highlight"><i class="fas fa-bolt mr-1"></i> 1400W Heater</div>
+                  
+                  <div class="flex items-start">
+                    <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Dimensions:</strong> 255×255×450 mm</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Weight:</strong> 13 kg (Main) + 3kg (Filter)</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
+                    <span><strong class="font-medium">Capacity:</strong> 6 pads per cycle (180-200/day)</span>
+                  </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
+                  <span class="text-lg font-bold">Contact for Price</span>
+                  <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next hidden sm:flex"></div>
+        <div class="swiper-button-prev hidden sm:flex"></div>
+      </div>
+    </section>
+
+    <!-- Smoke Control Technology -->
+    <section class="smoke-control-bg text-white rounded-xl p-8 md:p-12 mb-20 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')"></div>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div>
+          <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Innovation</span>
+          <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Advanced Smoke Control Technology</h2>
+          <p class="text-lg opacity-90 mb-8">Our specialized models feature activated carbon ceramic blanket filters for effective filtration of smoke emissions and complete odor control.</p>
+          
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-xl mt-1 mr-4 text-green-300"></i>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Complete Odor Elimination</h3>
+                <p class="opacity-90">Activated carbon filters neutralize all unpleasant odors during the incineration process.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-xl mt-1 mr-4 text-green-300"></i>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Cleaner Emissions</h3>
+                <p class="opacity-90">Dramatically reduces visible smoke output for environmentally friendly operation.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-check-circle text-xl mt-1 mr-4 text-green-300"></i>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">High-Power Exhaust System</h3>
+                <p class="opacity-90">Built-in exhaust fan ensures optimal airflow and efficient smoke filtration.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#contact" class="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Request Technical Details</a>
+        </div>
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-lg">
+            <img src="https://via.placeholder.com/500x400?text=Smoke+Control+System" alt="Smoke Control System" class="rounded-xl shadow-2xl w-full">
+            <div class="filter-badge">
+              <div class="bg-green-100 p-3 rounded-lg mr-4">
+                <i class="fas fa-filter text-green-600 text-2xl"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Activated Carbon Filter</h4>
+                <p class="text-sm text-gray-600">99% odor elimination</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mb-20">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Customer Stories</span>
+        <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+        <p class="max-w-2xl mx-auto text-gray-600">Hear from institutions and organizations that trust EcoBurn for their sanitary waste management needs.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 text-xl mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="text-gray-600 text-sm">5.0</span>
+          </div>
+          <p class="text-gray-700 mb-6">"The EcoBurn incinerator has been a game-changer for our hospital. The smoke control feature makes it perfect for indoor use, and the staff finds it very easy to operate."</p>
+          <div class="flex items-center">
+            <img src="https://via.placeholder.com/60x60?text=Dr.+Patel" alt="Dr. Patel" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Dr. Anjali Patel</h4>
+              <p class="text-sm text-gray-600">Medical Superintendent, City Hospital</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 text-xl mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="text-gray-600 text-sm">5.0</span>
+          </div>
+          <p class="text-gray-700 mb-6">"We've installed EcoBurn units in all our college hostels. The high capacity models handle the load perfectly, and the automatic operation requires minimal supervision."</p>
+          <div class="flex items-center">
+            <img src="https://via.placeholder.com/60x60?text=Prof.+Kumar" alt="Prof. Kumar" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Prof. Rajesh Kumar</h4>
+              <p class="text-sm text-gray-600">Administrator, University Campus</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 text-xl mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-gray-600 text-sm">4.5</span>
+          </div>
+          <p class="text-gray-700 mb-6">"As a hotel chain, hygiene is our top priority. The EcoBurn incinerators provide a discreet and efficient solution for our guests' sanitary waste disposal needs."</p>
+          <div class="flex items-center">
+            <img src="https://via.placeholder.com/60x60?text=Ms.+Sharma" alt="Ms. Sharma" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Ms. Priya Sharma</h4>
+              <p class="text-sm text-gray-600">Operations Manager, Luxury Hotels</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
+          <p class="text-lg text-gray-600 mb-8">Have questions about our sanitary napkin incinerators? Our team is ready to assist with product information, pricing, and technical specifications.</p>
+          
+          <div class="space-y-5 mb-8">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-4">
+                <i class="fas fa-map-marker-alt text-green-600"></i>
+              </div>
+              <span>Transport Nagar, Bhilai, Distt - Durg (C.G.)</span>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-4">
+                <i class="fas fa-phone-alt text-green-600"></i>
+              </div>
+              <span>+91 9302764338, +91 9560532288</span>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-4">
+                <i class="fas fa-envelope text-green-600"></i>
+              </div>
+              <span>info@ecoburn.com</span>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-lg mr-4">
+                <i class="fas fa-clock text-green-600"></i>
+              </div>
+              <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+          
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-green-600 text-gray-700 hover:text-white rounded-full flex items-center justify-center transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-green-600 text-gray-700 hover:text-white rounded-full flex items-center justify-center transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-green-600 text-gray-700 hover:text-white rounded-full flex items-center justify-center transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-green-600 text-gray-700 hover:text-white rounded-full flex items-center justify-center transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <form class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name*</label>
+                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="Enter your name" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address*</label>
+                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="Enter your email" required>
+              </div>
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number*</label>
+              <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="Enter your phone number" required>
+            </div>
+            <div>
+              <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Product Interest</label>
+              <select id="product" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
+                <option value="">Select a product</option>
+                <option value="EB-100">EB-100 (100 pads/day)</option>
+                <option value="EB-200">EB-200 (200 pads/day)</option>
+                <option value="EB-300">EB-300 (300 pads/day)</option>
+                <option value="SC-EB-100">SC EB-100 (Smoke Control)</option>
+                <option value="SC-EB-200">SC EB-200 (Smoke Control)</option>
+                <option value="SC-EB-300">SC EB-300 (Smoke Control)</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+              <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" placeholder="Tell us about your requirements"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition shadow-md hover:shadow-lg">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Call to Action -->
+  <section class="hero-bg text-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Sanitary Waste Management?</h2>
+      <p class="text-xl opacity-90 mb-8">Contact us today to discuss your requirements and get a customized solution for your facility.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact" class="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg">Get a Free Quote</a>
+        <a href="tel:+919302764338" class="inline-block border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-green-700 transition">Call Now: +91 9302764338</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <div class="footer-logo">
+                  <img src="images/img-logo.png" alt="" width="200px">
+                </div>
+                <p>Committed to providing organic, sustainable period care that's good for your body and the planet. Our mission is to empower women through healthy, eco-friendly menstrual products.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links-container">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Welcome.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="About.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="Products.html"><i class="fas fa-chevron-right"></i> Our Products</a></li>
+                    <li><a href="Privacy.html"><i class="fas fa-chevron-right"></i> Sustainability</a></li>
+                    <li><a href="Privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="Terms.html"><i class="fas fa-chevron-right"></i> Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3 class="footer-heading">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Plot No 11 &amp; 11A Sector C , Industrial Area, Mandideep, Bhopal , Pin Code - 462046</p>
+                <a href="tel:+798743336"></a>
+                <p><i class="fas fa-phone-alt"></i> 798743336 , 7646824505 </p>
+               <a href="mailto:apnventures88@gmail.com" class="text-decoration-none"> <p><i class="fas fa-envelope"></i> apnventures88@gmail.com</p></a>
+            </div>
+
+            <!-- <div class="footer-section footer-newsletter">
+                <h3 class="footer-heading">Newsletter</h3>
+                <p>Subscribe to get updates on new products, special offers, and menstrual health tips.</p>
+                <form class="footer-newsletter-form">
+                    <input type="email" class="footer-newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="footer-newsletter-button">Join</button>
+                </form>
+                <p>We respect your privacy. Unsubscribe at any time.</p>
+            </div> -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AAIFit. All Rights Reserved. | Designed &amp; Developed With &#10084;&#65039; By <a href="https://www.logixhunt.com/" class="text-danger text-decoration-none">Logixhunt</a> </p>
+            <!-- <div class="footer-payments">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div> -->
+        </div>
+</footer>
+<!-- FOOTER SECTION ENDS================================================== -->
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg z-40 opacity-0 invisible transition-all duration-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script>
+    // Initialize Swiper sliders with 3 slides per view
+    document.addEventListener('DOMContentLoaded', function() {
+      const standardSwiper = new Swiper('.standard-models-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.standard-models-swiper .swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.standard-models-swiper .swiper-button-next',
+          prevEl: '.standard-models-swiper .swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
+
+      const smokeControlSwiper = new Swiper('.smoke-control-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.smoke-control-swiper .swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.smoke-control-swiper .swiper-button-next',
+          prevEl: '.smoke-control-swiper .swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const closeMobileMenu = document.getElementById('closeMobileMenu');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        setTimeout(() => {
+          mobileMenu.classList.add('open');
+        }, 10);
+      });
+
+      closeMobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+      });
+
+      // Close mobile menu when clicking on a link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+          }, 300);
+        });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+        
+        if (window.scrollY > 50) {
+          navbar.classList.add('bg-white', 'shadow-md', 'py-4');
+          navbar.classList.remove('py-6');
+        } else {
+          navbar.classList.remove('bg-white', 'shadow-md', 'py-4');
+          navbar.classList.add('py-6');
+        }
+        
+        // Back to top button
+        if (window.scrollY > 300) {
+          backToTop.classList.remove('opacity-0', 'invisible');
+          backToTop.classList.add('opacity-100', 'visible');
+        } else {
+          backToTop.classList.add('opacity-0', 'invisible');
+          backToTop.classList.remove('opacity-100', 'visible');
+        }
+      });
+
+      // Back to top button
+      document.getElementById('backToTop').addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Form submission
+      document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your enquiry! We will contact you shortly.');
+        this.reset();
+      });
+
+      // GSAP animations
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // Hero section animation
+      gsap.from("#home h1", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        ease: "power3.out",
+        delay: 0.2
+      });
+
+      gsap.from("#home p", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        delay: 0.4,
+        ease: "power3.out"
+      });
+
+      gsap.from("#home .cta-button", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        delay: 0.6,
+        ease: "power3.out",
+        stagger: 0.2
+      });
+
+      // Feature cards animation
+      gsap.utils.toArray(".feature-card").forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            toggleActions: "play none none none"
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          delay: i * 0.1,
+          ease: "back.out(1)"
+        });
+      });
+
+      // Section headings animation
+      gsap.utils.toArray("section").forEach(section => {
+        const heading = section.querySelector("h2");
+        if (heading) {
+          gsap.from(heading, {
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none none"
+            },
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power2.out"
+          });
+        }
+      });
+
+      // Product cards animation
+      gsap.utils.toArray(".product-card").forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            toggleActions: "play none none none"
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.6,
+          delay: i * 0.05,
+          ease: "power1.out"
+        });
+      });
+
+      // Testimonial animation
+      gsap.utils.toArray(".bg-white.shadow-lg").forEach((testimonial, i) => {
+        gsap.from(testimonial, {
+          scrollTrigger: {
+            trigger: testimonial,
+            start: "top 80%",
+            toggleActions: "play none none none"
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.6,
+          delay: i * 0.1,
+          ease: "back.out(1)"
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
