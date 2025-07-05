@@ -1,0 +1,606 @@
+<!-- 
+  @Author: DASTAN_E_ALAM
+  @Date:   2025-07-05 20:52:47
+  @Last Modified by:   DASTAN_E_ALAM
+  @Last Modified time: 2025-07-05 21:34:08
+-->
+
+<!-- HTML Document Type and Language Declaration -->
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+    <!-- Website Title -->
+    <title>AAIFIT | Smart Comfort for Every Cycle</title>
+    <!-- GSAP + Draggable CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+    <!-- &#9989; Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- &#9989; Font Awesome Icons (v6) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- &#9989; Custom Website Stylesheet -->
+     <link rel="stylesheet" href="./css/css-style.css">
+     <link rel="stylesheet" href="./css/about_page.css">
+     <link rel="stylesheet" href="./css/about_usSECTION_STARTS.css">
+    <link rel="stylesheet" href="./css/CONTACT.css">
+    
+    <link rel="stylesheet" href="./css/FAQ.css">
+    <link rel="stylesheet" href="./css/FEATURE.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/HeroSection.css">
+    <link rel="stylesheet" href="./css/PRIVACY_POLICY.css">
+    <link rel="stylesheet" href="./css/product_slider.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/Sustainability.css">
+    <link rel="stylesheet" href="./css/term.css">
+    <link rel="stylesheet" href="./css/TESTIMONIAL PAGE.css">
+    <link rel="stylesheet" href="./css/why.css">
+    <link rel="stylesheet" href="css/about_page.css">
+    
+    <style>
+ 
+.title {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(2.8rem, 8vw, 5rem); /* Works responsively */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #263238;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.whytitle {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem); /* Scales on small to large screens */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  cursor: none;
+  box-sizing: border-box;
+}
+.whytitle::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(129, 199, 132, 0.4);
+    z-index: -1;
+    transform: skewY(-2deg);
+}
+
+/* #slider {
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+} */
+
+
+
+
+    </style>
+    
+    <!--  AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- &#9989; Bootstrap 5.3.7 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- &#9989; GSAP Animation Library -->
+    <script src="js/3.11.4-gsap.min.js"></script>
+
+
+    <!-- &#9989; GSAP ScrollTrigger Plugin -->
+    <script src="js/3.11.4-ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+<!-- TOP HEADER SECTION ENDS -->
+<!-- Header SECTION START -->
+<div class="header-container">
+    <header>
+        <a href="./index.html">
+            <img src="images/img-logo.png" alt="AIFIT Logo" class="logo">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Machines.html">Machines</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <ul>
+        <li><a href="./index.html" class="mobile-link">Home</a></li>
+        <li><a href="About.html" class="mobile-link">About Us</a></li>
+        <li><a href="Products.html" class="mobile-link">Products</a></li>
+        <li><a href="Machines.html" class="mobile-link">Machines</a></li>
+        <li><a href="Features.html" class="mobile-link">Features</a></li>
+        <li><a href="Testimonials.html" class="mobile-link">Testimonials</a></li>
+        <li><a href="Contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+</div>
+<!-- Header SECTION ENDS -->
+<!-- BREADCRUM STARTS=================================================== -->
+   <div class="breadcrumb-hero">
+            <h1> Product Features</h1>
+            <ul class="breadcrumb-nav">
+                <li class="breadcrumb-item">
+                    <a href="./index.html" class="breadcrumb-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <span class="breadcrumb-separator">/</span>
+                <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-link active">
+                   <i class="fa-solid fa-star"></i>Features
+                    </a>
+                </li>
+            </ul>
+        </div>
+<!-- BREADCRUMB ENDS=============================================================== -->
+
+
+
+<!-- Key Features Section -->
+<section class="key-features">
+    <div class="container">
+         <div class="why2">
+            <div class="why3"> Features</div>
+            <h2 class="why4">Our Advanced Features</h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon1" style="background-color: #FFEEEE;">
+                    <i class="fas fa-shield-alt" style="color: #FF6B6B;"></i>
+                </div>
+                <h3>Superior Protection</h3>
+                <p>Advanced leak-proof barriers and antibacterial properties</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon1" style="background-color: #E8F5E9;">
+                    <i class="fas fa-leaf" style="color: #2E7D32;"></i>
+                </div>
+                <h3>Eco-Friendly</h3>
+                <p>Biodegradable materials that care for the environment</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon1" style="background-color: #E3F2FD;">
+                    <i class="fas fa-wind" style="color: #1976D2;"></i>
+                </div>
+                <h3>Breathable Comfort</h3>
+                <p>Airflow technology for all-day freshness</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon1" style="background-color: #FFF8E1;">
+                    <i class="fas fa-heart" style="color: #FFA000;"></i>
+                </div>
+                <h3>Skin-Friendly</h3>
+                <p>Hypoallergenic materials for sensitive skin</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /* CURVE UP */ STARTS -->
+<section>
+        <div class="up1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,
+                        931.37,112.77,600,112.77Z" class="shape-fill"   stroke="none"></path>
+            </svg>
+        </div>
+</section>
+<!-- /* CURVE UP */ ENDS -->
+
+<!-- Sustainability SECTION  STARTS====================================================== -->
+<section class="sustainability-section">
+  <div class="sustainability-container">
+    <div class="sustainability-grid">
+      <!-- Cards Right -->
+      <div class="features-container">
+        <!-- Feature 1 -->
+        <div class="feature-card" data-scroll>
+          <div class="feature-header">
+            <div class="feature-number">01</div>
+            <div class="feature-divider"></div>
+          </div>
+          <h3 class="feature-title">Organic Cotton</h3>
+          <p class="feature-description">Grown without pesticides for your health and the planet's</p>
+          <div class="feature-highlight"></div>
+          <div class="feature-icon">🌱</div>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card" data-scroll data-scroll-delay="100">
+          <div class="feature-header">
+            <div class="feature-number">02</div>
+            <div class="feature-divider"></div>
+          </div>
+          <h3 class="feature-title">Biodegradable</h3>
+          <p class="feature-description">Breaks down naturally in 6-12 months</p>
+          <div class="feature-highlight"></div>
+          <div class="feature-icon">♻️</div>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card" data-scroll data-scroll-delay="200">
+          <div class="feature-header">
+            <div class="feature-number">03</div>
+            <div class="feature-divider"></div>
+          </div>
+          <h3 class="feature-title">Plastic-Free</h3>
+          <p class="feature-description">Zero plastic in pads or packaging</p>
+          <div class="feature-highlight"></div>
+          <div class="feature-icon">🚯</div>
+        </div>
+      </div>
+      
+      <!-- Content Left -->
+      <div class="content-container">
+        <span class="section-tag">Our Green Promise</span>
+        <h2 class="section-title">Sustainable <br>Period Care</h2>
+        <p class="section-subtitle">Better for your body. Kinder to the Earth.</p>
+        
+        <div class="image-container">
+          <img src="images/img-sus.jpeg" alt="Sustainable period products" loading="lazy">
+          <div class="image-overlay"></div>
+        </div>
+        
+        <div class="stats-container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">80%</div>
+              <div class="stat-label">Minimal water used</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">60%</div>
+              <div class="stat-label">Lower carbon footprint</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">100%</div>
+              <div class="stat-label">Compostable packaging</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA Button -->
+    <div class="cta-container" data-scroll data-scroll-delay="300">
+      <a href="Features.html" class="cta-button">
+        <span>Discover More</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Decorative Elements -->
+  <div class="decorative-elements">
+    <div class="circle-decor circle-1"></div>
+    <div class="circle-decor circle-2"></div>
+    <div class="leaf-decor leaf-1">🍃</div>
+    <div class="leaf-decor leaf-2">🍃</div>
+  </div>
+</section>
+<!-- Sustainability SECTION ENDS ====================================================== -->
+    
+<!-- DOWN CURVE Section STARTS-->
+<section class="last-section">
+      <div class="custom-shape-divider-top-1750672750">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+        </svg>
+      </div> 
+</section>
+<!-- DOWN CURVE Section ENDS-->
+ <!-- TESTIMONIALS SECTION STARTS -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <div class="why2">
+            <div class="why3"> Testimonials</div>
+            <h2 class="why4">What Our Customer Says</h2>
+        </div>
+        </div>
+        
+        <div class="testimonials-slider" data-aos="fade-up">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">AaiFit products have completely changed my period experience. The comfort and reliability are unmatched!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya K.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya K.</h4>
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">As a doctor, I recommend AaiFit to all my patients. The health benefits are scientifically proven.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Ananya S.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Ananya S.</h4>
+                            <p>Gynecologist, Delhi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">The social mission behind AaiFit is what drew me in, but the quality is what made me stay. Love these products!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha R.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Neha R.</h4>
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="d-flex align-content-center justify-content-center mb-3">
+          <button class="about-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </button>
+       </div>
+    </div>
+</section>
+<!-- TESTIMONIALS SECTION ENDS -->
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Simple hover effects
+    const productCards = document.querySelectorAll('.product-card');
+    
+    productCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.querySelector('.product-link').style.textDecoration = 'underline';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.querySelector('.product-link').style.textDecoration = 'none';
+        });
+    });
+});
+</script>
+ <!-- SECTION ENDS================================================================ -->
+<!-- Add AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Add AOS JS and initialize -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS (Animate On Scroll)
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+    // /* <!-- Sustainability SECTION starts ====================================================== --> */
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Scroll animation function
+  function animateOnScroll() {
+    const elements = document.querySelectorAll('[data-scroll]');
+    const windowHeight = window.innerHeight;
+    const elementVisible = 150;
+    
+    elements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      
+      if (elementTop < windowHeight - elementVisible) {
+        const delay = element.getAttribute('data-scroll-delay') || 0;
+        setTimeout(() => {
+          element.classList.add('visible');
+        }, delay);
+      }
+    });
+  }
+  
+  // Initialize on load
+  animateOnScroll();
+  
+  // Add scroll event listener
+  window.addEventListener('scroll', animateOnScroll);
+  
+  // Animate stats numbers
+  const stats = document.querySelectorAll('.sus19');
+  
+  function animateStats() {
+    stats.forEach(stat => {
+      const target = parseInt(stat.textContent.replace('%', ''));
+      let current = 0;
+      const increment = target / 30;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          clearInterval(timer);
+          current = target;
+        }
+        stat.textContent = Math.floor(current) + '%';
+      }, 30);
+    });
+  }
+  
+  // Trigger stats animation when visible
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateStats();
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  document.querySelector('.sus16').querySelectorAll('*').forEach(el => {
+    statsObserver.observe(el);
+  });
+  
+  // Card hover effects
+  const cards = document.querySelectorAll('.sus9');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px)';
+      card.style.boxShadow = '0 15px 40px rgba(27, 94, 32, 0.12)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.boxShadow = '0 10px 30px rgba(27, 94, 32, 0.08)';
+    });
+  });
+});
+// <!-- Sustainability SECTION ENDS ====================================================== -->
+</script>
+
+
+<!-- TOP FOOTER SECTION STARTS================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://www.aaifit.com/assets/js/script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
+<!-- TOP FOOTER SECTION ENDS================================================== -->
+
+
+<!-- FOOTER SECTION STARTS================================================== -->
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <div class="footer-logo">
+                  <img src="https://www.aaifit.com/assets/img/logo.png" alt="" width="200px">
+                </div>
+                <p>Committed to providing organic, sustainable period care that's good for your body and the planet. Our mission is to empower women through healthy, eco-friendly menstrual products.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links-container">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="https://www.aaifit.com/Welcome"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="https://www.aaifit.com/About"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="https://www.aaifit.com/Products"><i class="fas fa-chevron-right"></i> Our Products</a></li>
+                    <li><a href="https://www.aaifit.com/Privacy"><i class="fas fa-chevron-right"></i> Sustainability</a></li>
+                    <li><a href="https://www.aaifit.com/Privacy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="https://www.aaifit.com/Terms"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3 class="footer-heading">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Plot No 11 & 11A Sector C , Industrial Area, Mandideep, Bhopal , Pin Code - 462046</p>
+                <a href="tel:+798743336"></a>
+                <p><i class="fas fa-phone-alt"></i> 798743336 , 7646824505 </p>
+               <a href="mailto:apnventures88@gmail.com" class="text-decoration-none"> <p><i class="fas fa-envelope"></i> apnventures88@gmail.com</p></a>
+            </div>
+
+            <!-- <div class="footer-section footer-newsletter">
+                <h3 class="footer-heading">Newsletter</h3>
+                <p>Subscribe to get updates on new products, special offers, and menstrual health tips.</p>
+                <form class="footer-newsletter-form">
+                    <input type="email" class="footer-newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="footer-newsletter-button">Join</button>
+                </form>
+                <p>We respect your privacy. Unsubscribe at any time.</p>
+            </div> -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AAIFit. All Rights Reserved. | Designed & Developed With ❤️ By <a href="https://www.logixhunt.com/" class="text-danger text-decoration-none">Logixhunt</a> </p>
+            <!-- <div class="footer-payments">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div> -->
+        </div>
+</footer>
+<!-- FOOTER SECTION ENDS================================================== -->
+
+
