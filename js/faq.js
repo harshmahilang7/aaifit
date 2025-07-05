@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 16:10:07
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-02 20:21:54
+ * @Last Modified time: 2025-07-05 12:01:15
  */
 document.addEventListener('DOMContentLoaded', function () {
     // Enhanced FAQ toggle functionality
@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
                     otherItem.classList.remove('active');
                     const otherAnswer = otherItem.querySelector('.faq-answer');
+                    
+                    // For smooth transition on close
+                    otherAnswer.style.maxHeight = otherAnswer.scrollHeight + 'px';
+                    otherAnswer.offsetHeight; // force reflow
                     otherAnswer.style.maxHeight = '0';
                 }
             });
@@ -26,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const answer = item.querySelector('.faq-answer');
 
             if (item.classList.contains('active')) {
-                // Reset maxHeight to recalculate if content changed
-                answer.style.maxHeight = 'none'; 
+                answer.style.maxHeight = 'none'; // reset
                 const height = answer.scrollHeight;
-                console.log(`Answer height for "${question.textContent}": ${height}px`);
                 answer.style.maxHeight = height + 'px';
             } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.offsetHeight; // force reflow
                 answer.style.maxHeight = '0';
             }
         });
@@ -47,15 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         observer.unobserve(entry.target);
                     }
                 });
-            }, {
-                threshold: 0.1
-            });
+            }, { threshold: 0.1 });
 
-            elements.forEach(element => {
-                observer.observe(element);
-            });
+            elements.forEach(element => observer.observe(element));
         } else {
-            // Fallback for older browsers
             elements.forEach((element, index) => {
                 setTimeout(() => {
                     element.classList.add('visible');
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const faqElements = document.querySelectorAll('.faq-item, .faq-cta');
     animateElements(faqElements);
 
-    // Add hover effect to absorbency levels
+    // Hover effect on absorbency levels
     const absorbencyLevels = document.querySelectorAll('.absorbency-level');
     absorbencyLevels.forEach(level => {
         level.addEventListener('mouseenter', () => {
