@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-05 20:51:14
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-05 22:37:46
+  @Last Modified time: 2025-07-06 02:20:05
 -->
 
 <!-- HTML Document Type and Language Declaration -->
@@ -111,22 +111,33 @@
 
 .containerc
 {
-  background: linear-gradient(180deg, #f8f9fa 0%, #e8f5e9 100%);
+  background: white;
+  padding: 20px
 }
+
 
 .mission-section
 {
-  background: linear-gradient(180deg, #f8f9fa 0%, #e8f5e9 100%);
+  background: white;
+  padding: 4rem;
+
 }
 .section-header 
 {
     padding: 0;
     margin-bottom: 80;
 }
+@media only screen and (max-width: 1023px) {
+  .mission-section {
+    padding: 1rem;
+  }
+}
 
-
-
-
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1280px !important;
+    }
+}
     </style>
     
     <!--  AOS CSS -->
@@ -280,7 +291,8 @@
         <div class="section-header" data-aos="fade-up">
             <div class="why2">
             <div class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4"> Mission & Vision</div>
-            <h2 class="why4">Our Mission & Visions</h2>
+            <br>
+            <h2 class="title">Our Mission & Visions</h2>
         </div>
         </div>
         
@@ -317,14 +329,14 @@
 <!-- OUR MISSION SECTION ENDS -->
      
 <!-- DOWN CURVE Section STARTS-->
-<section class="last-section">
+<!-- <section class="last-section">
       <div class="custom-shape-divider-top-1750672750">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
         </svg>
       </div> 
 </section>
-<!-- DOWN CURVE Section ENDS-->
+DOWN CURVE Section ENDS -->
 
 
 <!-- TESTIMONIALS SECTION STARTS -->

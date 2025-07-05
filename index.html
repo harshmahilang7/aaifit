@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-01 04:59:22
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-05 22:19:11
+  @Last Modified time: 2025-07-06 01:17:25
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -72,17 +72,21 @@
 
 .whytitle {
   font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  font-size: clamp(1.8rem, 6vw, 3rem); /* Scales on small to large screens */
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  color: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
-  margin: 0 0 1rem;
-  padding: 0;
-  display: inline-block;
-  position: relative;
-  cursor: none;
-  box-sizing: border-box;
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    background: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    cursor: none;
 }
 .whytitle::after {
     content: "";
@@ -95,6 +99,21 @@
     z-index: -1;
     transform: skewY(-2deg);
 }
+.h22
+{
+   font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem); /* Scales on small to large screens */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  cursor: none;
+  box-sizing: border-box;
+}
 
 /* #slider {
   overscroll-behavior-x: contain;
@@ -102,6 +121,10 @@
   scroll-behavior: smooth;
 } */
 
+.section-header
+{
+  padding-bottom: 0px;
+}
 
 
 
@@ -254,25 +277,14 @@
 <!-- ABOUT US SECTION ENDS -->
 
 
-<!-- ABOUT US SECTION ENDS -->
-<!-- /* CURVE UP */ STARTS -->
-<!-- <section>
-        <div class="up1">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,
-                        931.37,112.77,600,112.77Z" class="shape-fill" stroke="none"></path>
-            </svg>
-        </div>
-</section>
-/* CURVE UP */ ENDS -->
-
 <!-- WHY US SECTION STARTS =========================================================== -->
 <section class="why-section">
     <div class="why1">
         <div class="section-header">
         <div class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Unique Advantages</div>
-        <h4>What Makes</h4>
-        <h2 class="whytitle">Aaifit Different</h2>
+        <br>
+        <span class="h22">What Makes <h2 class="whytitle">Aaifit </h2> Different</span>
+        
         <!-- <div class="divider">
              <div class="line"></div>  
         </div> -->
@@ -316,15 +328,7 @@
 </section>
 
     
-<!-- DOWN CURVE Section STARTS
-<section class="why-last-section">
-      <div class="custom-shape-divider-top-1750672750">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-        </svg>
-      </div> 
-</section> -->
-<!-- DOWN CURVE Section ENDS-->
+
 
 <!-- WHY US SECTION ENDS =========================================================== -->
 
@@ -518,122 +522,120 @@
 
 
 <!-- Products Showcase Section -->
-<section class="py-16 bg-gray-50">
+  
+<section class="py-12 md:py-16 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Solutions</span>
-      <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Complete Menstrual Hygiene Solutions</h2>
-      <p class="max-w-2xl mx-auto text-gray-600">From convenient access to safe disposal, we provide end-to-end solutions for menstrual hygiene management.</p>
+    <div class="text-center mb-8 md:mb-12">
+      <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs md:text-sm font-semibold mb-3">Our Solutions</span>
+      <h2 class="font-playfair text-2xl md:text-4xl font-bold mb-3 md:mb-4">Complete Menstrual Hygiene Solutions</h2>
+      <p class="max-w-2xl mx-auto text-gray-600 text-sm md:text-base px-2">From convenient access to safe disposal, we provide end-to-end solutions for menstrual hygiene management.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
       <!-- Vending Machines Card -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full">
-        <div class="h-64 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-6">
+      <div class="bg-white rounded-xl shadow-md md:shadow-lg overflow-hidden flex flex-col h-full">
+        <div class="h-48 md:h-64 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4 md:p-6">
           <img src="https://via.placeholder.com/400x300?text=Vending+Machines" alt="Sanitary Napkin Vending Machines" class="max-h-full max-w-full">
         </div>
-        <div class="p-6 flex-grow">
-          <h3 class="text-2xl font-bold mb-4">Sanitary Napkin Vending Machines</h3>
-          <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="p-4 md:p-6 flex-grow">
+          <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Sanitary Napkin Vending Machines</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-coins text-green-600"></i>
+                <i class="fas fa-coins text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Coin-Operated</h4>
-                <p class="text-sm text-gray-600">Manual & automatic options</p>
+                <h4 class="font-semibold text-sm md:text-base">Coin-Operated</h4>
+                <p class="text-xs md:text-sm text-gray-600">Manual & automatic options</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-bolt text-green-600"></i>
+                <i class="fas fa-bolt text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Electric Models</h4>
-                <p class="text-sm text-gray-600">With digital displays</p>
+                <h4 class="font-semibold text-sm md:text-base">Electric Models</h4>
+                <p class="text-xs md:text-sm text-gray-600">With digital displays</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-microphone text-green-600"></i>
+                <i class="fas fa-microphone text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Voice Guidance</h4>
-                <p class="text-sm text-gray-600">Multi-language support</p>
+                <h4 class="font-semibold text-sm md:text-base">Voice Guidance</h4>
+                <p class="text-xs md:text-sm text-gray-600">Multi-language support</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-box-open text-green-600"></i>
+                <i class="fas fa-box-open text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">30-100 Capacity</h4>
-                <p class="text-sm text-gray-600">Various sizes available</p>
+                <h4 class="font-semibold text-sm md:text-base">30-100 Capacity</h4>
+                <p class="text-xs md:text-sm text-gray-600">Various sizes available</p>
               </div>
             </div>
           </div>
-          <a href="products.html#vending" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition w-full text-center">View Vending Machines</a>
+          <a href="products.html#vending" class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg font-semibold transition w-full text-center text-sm md:text-base">View Vending Machines</a>
         </div>
       </div>
 
       <!-- Incinerators Card -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full">
-        <div class="h-64 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-6">
+      <div class="bg-white rounded-xl shadow-md md:shadow-lg overflow-hidden flex flex-col h-full">
+        <div class="h-48 md:h-64 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4 md:p-6">
           <img src="https://via.placeholder.com/400x300?text=Incinerators" alt="Sanitary Napkin Incinerators" class="max-h-full max-w-full">
         </div>
-        <div class="p-6 flex-grow">
-          <h3 class="text-2xl font-bold mb-4">Sanitary Napkin Incinerators</h3>
-          <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="p-4 md:p-6 flex-grow">
+          <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">Sanitary Napkin Incinerators</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-fire text-green-600"></i>
+                <i class="fas fa-fire text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Efficient Burning</h4>
-                <p class="text-sm text-gray-600">100-400 pads/day capacity</p>
+                <h4 class="font-semibold text-sm md:text-base">Efficient Burning</h4>
+                <p class="text-xs md:text-sm text-gray-600">100-400 pads/day capacity</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-filter text-green-600"></i>
+                <i class="fas fa-filter text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Smoke Control</h4>
-                <p class="text-sm text-gray-600">Activated carbon filters</p>
+                <h4 class="font-semibold text-sm md:text-base">Smoke Control</h4>
+                <p class="text-xs md:text-sm text-gray-600">Activated carbon filters</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-robot text-green-600"></i>
+                <i class="fas fa-robot text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Automatic</h4>
-                <p class="text-sm text-gray-600">Timer-controlled operation</p>
+                <h4 class="font-semibold text-sm md:text-base">Automatic</h4>
+                <p class="text-xs md:text-sm text-gray-600">Timer-controlled operation</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="bg-green-100 p-2 rounded-lg mr-3">
-                <i class="fas fa-shield-alt text-green-600"></i>
+                <i class="fas fa-shield-alt text-green-600 text-sm"></i>
               </div>
               <div>
-                <h4 class="font-semibold">Double Insulation</h4>
-                <p class="text-sm text-gray-600">For maximum safety</p>
+                <h4 class="font-semibold text-sm md:text-base">Double Insulation</h4>
+                <p class="text-xs md:text-sm text-gray-600">For maximum safety</p>
               </div>
             </div>
           </div>
-          <a href="products.html#incinerators" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition w-full text-center">View Incinerators</a>
+          <a href="products.html#incinerators" class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg font-semibold transition w-full text-center text-sm md:text-base">View Incinerators</a>
         </div>
       </div>
     </div>
 
-    <div class="mt-12 text-center">
-      <a href="products.html" class="inline-block border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-3 rounded-full font-semibold transition">View All Products</a>
+    <div class="mt-8 md:mt-12 text-center">
+      <a href="products.html" class="inline-block border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-6 py-2 md:px-8 md:py-3 rounded-full font-semibold transition text-sm md:text-base">View All Products</a>
     </div>
   </div>
 </section>
-        
-  
-
 
 <!-- PRODUCTS SLIDER SECTION ENDS ================================================ -->
 
@@ -716,7 +718,7 @@
               <div class="stat-value">60%</div>
               <div class="stat-label">Lower carbon footprint</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-item ">
               <div class="stat-value">100%</div>
               <div class="stat-label">Compostable packaging</div>
             </div>
@@ -915,16 +917,6 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick-slick.min.js"></script>
 
-<!-- TOP FOOTER SECTION STARTS================================================== -->
-<!-- <section>
-        <div class="up11">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,
-                        931.37,112.77,600,112.77Z" class="shape-fill" stroke="none" style="background: black;"></path>
-            </svg>
-        </div>
-</section> -->
-<!-- /* CURVE UP */ ENDS -->
 
 <!-- FOOTER SECTION STARTS================================================== -->
 <footer class="footer">

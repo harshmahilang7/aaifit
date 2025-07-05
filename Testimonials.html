@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-02 19:31:01
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-05 20:59:54
+  @Last Modified time: 2025-07-06 02:44:19
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -29,6 +29,7 @@
           <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <!-- &#9989; GSAP Animation Library -->
     <script src="js/3.11.4-gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 
     <!-- &#9989; GSAP ScrollTrigger Plugin -->
@@ -52,6 +53,38 @@
     <link rel="stylesheet" href="./css/TESTIMONIAL PAGE.css">
     <link rel="stylesheet" href="./css/why.css">
     <link rel="stylesheet" href="css/about_page.css">
+
+    <style>
+        .whytitle {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    background: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    cursor: none;
+}
+.whytitle::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(129, 199, 132, 0.4);
+    z-index: -1;
+    transform: skewY(-2deg);
+}
+    </style>
   
 </head>
 <body>
@@ -127,8 +160,9 @@
     <div class="test2">
         <div class="test3 test4">
             <div class="why2">
-                <div class="why3">Testimonials</div>
-                <h2 class="why4">What Our Customers Say</h2>
+                <div  class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Testimonials</div>
+                <br>
+                <h2 class="whytitle">What Our Customers Say</h2>
             </div>
         </div>
 

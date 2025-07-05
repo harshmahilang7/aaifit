@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-05 19:22:14
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-05 21:01:07
+  @Last Modified time: 2025-07-06 02:34:18
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -105,6 +105,104 @@
     ::-webkit-scrollbar-thumb {
       @apply bg-green-600 rounded-full;
     } */
+
+    .up1
+{
+    background: linear-gradient(260deg, #f8f9fa 0%, #e8f5e9 100%);
+}
+
+.containerc
+{
+  background: white;
+  padding: 20px
+}
+
+.mission-section
+{
+  background: white;
+  padding: 4rem;
+
+}
+.section-header 
+{
+    padding: 0;
+    margin-bottom: 80;
+}
+@media only screen and (max-width: 1023px) {
+  .mission-section {
+    padding: 1rem;
+  }
+}
+
+.title {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(2.8rem, 8vw, 5rem); /* Works responsively */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #263238;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.whytitle {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    background: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    cursor: none;
+}
+.whytitle::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(129, 199, 132, 0.4);
+    z-index: -1;
+    transform: skewY(-2deg);
+}
+.h22
+{
+   font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem); /* Scales on small to large screens */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  cursor: none;
+  box-sizing: border-box;
+}
+
+/* #slider {
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+} */
+
+.section-header
+{
+  padding-bottom: 0px;
+}
   </style>
 </head>
 
@@ -193,248 +291,431 @@
   <!-- Main Content -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Vending Machines Section -->
-    <section id="vending" class="mb-20">
-      <div class="text-center mb-12">
-        <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Hygienic Solutions</span>
-        <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Sanitary Napkin Vending Machines</h2>
-        <p class="max-w-2xl mx-auto text-gray-600">Providing convenient access to sanitary products with manual and automatic operation options.</p>
-      </div>
+   <!-- Products Section -->
+<!-- Modern Products Section -->
+<section class="py-12 md:py-16 lg:py-20 bg-gray-50 px-4 sm:px-6">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-10 md:mb-14 lg:mb-16">
+      <span class="inline-block bg-green-100 text-green-700 text-xs md:text-sm font-medium px-3 py-1 rounded-full mb-3 md:mb-4 tracking-wider">PREMIUM FEMININE CARE</span>
+      <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4">Our Sanitary Pad Collection</h2>
+      <div class="w-16 h-0.5 bg-green-500 mx-auto mb-4 md:mb-5"></div>
+      <p class="max-w-2xl mx-auto text-gray-600 text-sm sm:text-base md:text-lg">Innovative designs for ultimate comfort and protection</p>
+    </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Manual 30 Pads -->
-        <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
-          <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
-            <img src="https://via.placeholder.com/300x300?text=Manual+30" alt="Manual 30 Pads" class="max-h-full max-w-full">
-          </div>
-          <div class="p-6 flex-grow">
-            <h3 class="text-xl font-bold mb-2">Manual 30 Pads</h3>
-            <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">30 Pads Capacity</span>
-            
-            <div class="space-y-3 mb-6">
-              <div class="highlight"><i class="fas fa-coins mr-1"></i> 5 Rs Coin Operated</div>
-              <div class="highlight"><i class="fas fa-plug mr-1"></i> No Electricity</div>
-              
-              <div class="flex items-start">
-                <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Dimensions:</strong> 485×150×300 mm</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Weight:</strong> 7.5 kg</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Capacity:</strong> 30 pads (1 spiral spring dispenser)</span>
-              </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
-              <span class="text-lg font-bold">Contact for Price</span>
-              <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
-            </div>
-          </div>
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <!-- Product 1 - Daily Comfort -->
+      <div class="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+        <div class="absolute top-4 left-4 z-10">
+          <span class="bg-green-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">BESTSELLER</span>
         </div>
-
-        <!-- Manual 60 Pads -->
-        <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
-          <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
-            <img src="https://via.placeholder.com/300x300?text=Manual+60" alt="Manual 60 Pads" class="max-h-full max-w-full">
-          </div>
-          <div class="p-6 flex-grow">
-            <h3 class="text-xl font-bold mb-2">Manual 60 Pads</h3>
-            <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">60 Pads Capacity</span>
-            
-            <div class="space-y-3 mb-6">
-              <div class="highlight"><i class="fas fa-coins mr-1"></i> 5 Rs Coin Operated</div>
-              <div class="highlight"><i class="fas fa-plug mr-1"></i> No Electricity</div>
-              
-              <div class="flex items-start">
-                <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Dimensions:</strong> 500×150×450 mm</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Weight:</strong> 10 kg</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Capacity:</strong> 60 pads (2 spiral spring dispensers)</span>
-              </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
-              <span class="text-lg font-bold">Contact for Price</span>
-              <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
-            </div>
-          </div>
+        
+        <!-- Product Image -->
+        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+          <img src="https://www.aaifit.com/assets/img/one.png" alt="Daily Comfort" class="w-full h-full object-contain object-center p-6 md:p-8 transition duration-500 group-hover:scale-105">
         </div>
-
-        <!-- Electronic 60 Pads -->
-        <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
-          <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
-            <img src="https://via.placeholder.com/300x300?text=Electronic+60" alt="Electronic 60 Pads" class="max-h-full max-w-full">
-          </div>
-          <div class="p-6 flex-grow">
-            <h3 class="text-xl font-bold mb-2">Electronic 60 Pads</h3>
-            <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">60 Pads Capacity</span>
-            
-            <div class="space-y-3 mb-6">
-              <div class="highlight"><i class="fas fa-hand-pointer mr-1"></i> Push Button</div>
-              <div class="highlight"><i class="fas fa-bolt mr-1"></i> 220V Power</div>
-              
-              <div class="flex items-start">
-                <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Dimensions:</strong> 570×150×450 mm</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Weight:</strong> 10 kg</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Capacity:</strong> 60 pads (2 spiral spring dispensers)</span>
-              </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
-              <span class="text-lg font-bold">Contact for Price</span>
-              <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+        
+        <!-- Product Info -->
+        <div class="p-5 md:p-6">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl md:text-2xl font-bold font-playfair text-gray-900">Daily Comfort</h3>
+            <div class="flex space-x-2">
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-green-50 text-green-800 text-xs font-medium border border-green-100">R</span>
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-gray-50 text-gray-800 text-xs font-medium border border-gray-100">L</span>
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-gray-50 text-gray-800 text-xs font-medium border border-gray-100">XL</span>
             </div>
           </div>
+          
+          <!-- Rating -->
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400 text-xs md:text-sm">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-gray-500 text-xs md:text-sm ml-2">428 reviews</span>
+          </div>
+          
+          <!-- Features -->
+          <ul class="space-y-2.5 mb-5">
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">Cotton cover for breathability</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">8-10 hours protection</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">Herbal infused with aloe vera</span>
+            </li>
+          </ul>
+          
+          <!-- Quick View Button -->
+          <button class="quick-view-btn w-full py-2.5 md:py-3 bg-white text-green-600 border border-green-600 rounded-lg font-medium transition duration-300 hover:bg-green-600 hover:text-white hover:shadow-sm flex items-center justify-center text-sm md:text-base">
+            <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+            Quick View
+          </button>
         </div>
       </div>
 
-      <div class="mt-8 text-center">
-        <a href="./Sanitary_Napkin_Vending_Machines.html" class="inline-block border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-3 rounded-full font-semibold transition">View All Vending Machines</a>
-      </div>
-    </section>
-
-    <!-- Incinerators Section -->
-    <section id="incinerators" class="mb-20">
-      <div class="text-center mb-12">
-        <span class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Eco-Friendly</span>
-        <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-4">Sanitary Napkin Incinerators</h2>
-        <p class="max-w-2xl mx-auto text-gray-600">Safe and hygienic disposal solutions with advanced smoke control technology.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- EB-100 -->
-        <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
-          <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
-            <img src="https://via.placeholder.com/300x300?text=EB-100" alt="EB-100 Incinerator" class="max-h-full max-w-full">
-          </div>
-          <div class="p-6 flex-grow">
-            <h3 class="text-xl font-bold mb-2">Model EB-100</h3>
-            <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">100 Pads/Day Capacity</span>
-            
-            <div class="space-y-3 mb-6">
-              <div class="highlight"><i class="fas fa-bolt mr-1"></i> 800W Heater</div>
-              <div class="highlight"><i class="fas fa-clock mr-1"></i> 15-20 min cycle</div>
-              
-              <div class="flex items-start">
-                <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Dimensions:</strong> 205×205×435 mm</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Weight:</strong> 11 kg</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Capacity:</strong> 4 pads per cycle (80-100/day)</span>
-              </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
-              <span class="text-lg font-bold">Contact for Price</span>
-              <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
-            </div>
-          </div>
+      <!-- Product 2 - Night Protection -->
+      <div class="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+        <!-- Product Image -->
+        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+          <img src="https://www.aaifit.com/assets/img/one.png" alt="Night Protection" class="w-full h-full object-contain object-center p-6 md:p-8 transition duration-500 group-hover:scale-105">
         </div>
-
-        <!-- EB-200 -->
-        <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
-          <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
-            <img src="https://via.placeholder.com/300x300?text=EB-200" alt="EB-200 Incinerator" class="max-h-full max-w-full">
-          </div>
-          <div class="p-6 flex-grow">
-            <h3 class="text-xl font-bold mb-2">Model EB-200</h3>
-            <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">200 Pads/Day Capacity</span>
-            
-            <div class="space-y-3 mb-6">
-              <div class="highlight"><i class="fas fa-bolt mr-1"></i> 800W Heater</div>
-              <div class="highlight"><i class="fas fa-clock mr-1"></i> 15-20 min cycle</div>
-              
-              <div class="flex items-start">
-                <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Dimensions:</strong> 255×255×450 mm</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Weight:</strong> 13 kg</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Capacity:</strong> 6 pads per cycle (180-200/day)</span>
-              </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
-              <span class="text-lg font-bold">Contact for Price</span>
-              <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
+        
+        <!-- Product Info -->
+        <div class="p-5 md:p-6">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl md:text-2xl font-bold font-playfair text-gray-900">Night Protection</h3>
+            <div class="flex space-x-2">
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-green-50 text-green-800 text-xs font-medium border border-green-100">R</span>
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-gray-50 text-gray-800 text-xs font-medium border border-gray-100">L</span>
             </div>
           </div>
-        </div>
-
-        <!-- SC EB-200 (Smoke Control) -->
-        <div class="product-card bg-white rounded-xl overflow-hidden h-full flex flex-col">
-          <div class="h-64 bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center p-6">
-            <img src="https://via.placeholder.com/300x300?text=SC+EB-200" alt="SC EB-200 Incinerator" class="max-h-full max-w-full">
-          </div>
-          <div class="p-6 flex-grow">
-            <h3 class="text-xl font-bold mb-2">SC Model EB-200</h3>
-            <span class="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">200 Pads/Day Capacity</span>
-            
-            <div class="space-y-3 mb-6">
-              <div class="highlight"><i class="fas fa-filter mr-1"></i> Carbon Filter</div>
-              <div class="highlight"><i class="fas fa-bolt mr-1"></i> 1400W Heater</div>
-              
-              <div class="flex items-start">
-                <i class="fas fa-ruler-combined text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Dimensions:</strong> 255×255×450 mm</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-weight-hanging text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Weight:</strong> 13 kg (Main) + 3kg (Filter)</span>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-box-open text-green-600 mt-1 mr-2"></i>
-                <span><strong class="font-medium">Capacity:</strong> 6 pads per cycle (180-200/day)</span>
-              </div>
+          
+          <!-- Rating -->
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400 text-xs md:text-sm">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-100 gap-4">
-              <span class="text-lg font-bold">Contact for Price</span>
-              <button class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold transition w-full sm:w-auto text-center">Enquire Now</button>
-            </div>
+            <span class="text-gray-500 text-xs md:text-sm ml-2">512 reviews</span>
           </div>
+          
+          <!-- Features -->
+          <ul class="space-y-2.5 mb-5">
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">Extra long for night use</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">10-12 hours protection</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">Leak-proof barriers</span>
+            </li>
+          </ul>
+          
+          <!-- Quick View Button -->
+          <button class="quick-view-btn w-full py-2.5 md:py-3 bg-white text-green-600 border border-green-600 rounded-lg font-medium transition duration-300 hover:bg-green-600 hover:text-white hover:shadow-sm flex items-center justify-center text-sm md:text-base">
+            <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+            Quick View
+          </button>
         </div>
       </div>
 
-      <div class="mt-8 text-center">
-        <a href="./Sanitary_Napkin_Incinerator_Machine.html" class="inline-block border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-3 rounded-full font-semibold transition">View All Incinerators</a>
+      <!-- Product 3 - Ultra Thin -->
+      <div class="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+        <div class="absolute top-4 left-4 z-10">
+          <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">NEW</span>
+        </div>
+        
+        <!-- Product Image -->
+        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden">
+          <img src="https://www.aaifit.com/assets/img/one.png" alt="Ultra Thin" class="w-full h-full object-contain object-center p-6 md:p-8 transition duration-500 group-hover:scale-105">
+        </div>
+        
+        <!-- Product Info -->
+        <div class="p-5 md:p-6">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl md:text-2xl font-bold font-playfair text-gray-900">Ultra Thin</h3>
+            <div class="flex space-x-2">
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-green-50 text-green-800 text-xs font-medium border border-green-100">R</span>
+              <span class="inline-flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-gray-50 text-gray-800 text-xs font-medium border border-gray-100">L</span>
+            </div>
+          </div>
+          
+          <!-- Rating -->
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400 text-xs md:text-sm">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="text-gray-500 text-xs md:text-sm ml-2">387 reviews</span>
+          </div>
+          
+          <!-- Features -->
+          <ul class="space-y-2.5 mb-5">
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">Only 0.2cm thin</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">8 hours protection</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base">Odor control technology</span>
+            </li>
+          </ul>
+          
+          <!-- Quick View Button -->
+          <button class="quick-view-btn w-full py-2.5 md:py-3 bg-white text-green-600 border border-green-600 rounded-lg font-medium transition duration-300 hover:bg-green-600 hover:text-white hover:shadow-sm flex items-center justify-center text-sm md:text-base">
+            <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+            Quick View
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- Modern Quick View Modal -->
+<div class="fixed inset-0 z-[1001] hidden overflow-y-auto" id="quickViewModal">
+  <div class="flex items-center justify-center min-h-screen pt-5 px-1 pb-1 text-center sm:block sm:p-0">
+    <!-- Background overlay -->
+    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-75 backdrop-blur-sm"></div>
+    </div>
+    
+    <!-- Modal content -->
+    <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl w-full mx-4">
+      <div class="bg-white px-3 py-3 sm:p-8">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-2xl font-bold font-playfair text-gray-900" id="modalTitle">Product Details</h3>
+          <button type="button" class="close-modal text-gray-400 hover:text-gray-500 focus:outline-none">
+            <span class="sr-only">Close</span>
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <!-- Product Image -->
+          <div class="bg-gray-50 rounded-lg p-6 flex items-center justify-center h-64 sm:h-80">
+            <img src="" alt="" class="max-h-full max-w-full" id="modalProductImage">
+          </div>
+          
+          <!-- Product Details -->
+          <div class="overflow-y-auto max-h-[calc(100vh-300px)] sm:max-h-[calc(100vh-200px)] pr-2">
+            <div class="flex items-center mb-3">
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="text-gray-500 text-sm ml-2" id="modalReviews">428 reviews</span>
+            </div>
+            
+            <h2 class="text-2xl md:text-3xl font-bold font-playfair mb-4" id="modalProductName">Daily Comfort</h2>
+            
+            <div class="mb-5">
+              <h4 class="font-semibold text-base md:text-lg mb-2">Available Sizes:</h4>
+              <div class="flex space-x-2" id="modalSizes">
+                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-100 text-green-800 text-sm font-medium border border-green-200">R</span>
+              </div>
+            </div>
+            
+            <div class="mb-5">
+              <h4 class="font-semibold text-base md:text-lg mb-2">Key Features:</h4>
+              <ul class="space-y-3" id="modalFeatures">
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700">Cotton cover for breathability</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-base md:text-lg mb-2">Product Description:</h4>
+              <p class="text-gray-700" id="modalDescription">
+                Our best-selling daily pad with cotton cover for ultimate comfort and breathability. Perfect for regular flow days with up to 8-10 hours of protection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 px-5 py-4 sm:px-8 sm:py-5 flex justify-end">
+        <button type="button" class="close-modal inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm md:text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Product data
+const products = {
+  1: {
+    name: "Daily Comfort",
+    image: "https://www.aaifit.com/assets/img/one.png",
+    reviews: "428 reviews",
+    sizes: ["R", "L", "XL"],
+    features: [
+      "100% organic cotton cover for breathability",
+      "Herbal infused with neem and aloe vera",
+      "Advanced absorption core for 8-10 hour protection",
+      "Breathable back sheet to prevent irritation",
+      "Wings for secure fit and leak protection",
+      "Dermatologically tested for sensitive skin"
+    ],
+    description: "Our best-selling daily pad with cotton cover for ultimate comfort and breathability. Perfect for regular flow days with up to 8-10 hours of protection. Infused with natural herbal extracts to soothe and protect sensitive skin."
+  },
+  2: {
+    name: "Night Protection",
+    image: "https://www.aaifit.com/assets/img/one.png",
+    reviews: "512 reviews",
+    sizes: ["R", "L"],
+    features: [
+      "35cm length for full coverage during sleep",
+      "Super absorbent core for heavy flow",
+      "Soft, non-woven top layer for comfort",
+      "Leak-proof barriers on sides and back",
+      "Aloe vera infused to prevent irritation",
+      "Extra wide back for maximum protection"
+    ],
+    description: "Extra long and absorbent for overnight protection. Special back design prevents leaks while you sleep comfortably. The wider back provides additional coverage for worry-free nights."
+  },
+  3: {
+    name: "Ultra Thin",
+    image: "https://www.aaifit.com/assets/img/one.png",
+    reviews: "387 reviews",
+    sizes: ["R", "L"],
+    features: [
+      "Only 0.2cm thin for discreet wear",
+      "Quick-dry surface keeps you comfortable",
+      "Flexible design for active movement",
+      "Odor control technology",
+      "Dermatologically tested",
+      "Central absorption channel for security"
+    ],
+    description: "Incredibly thin (just 2mm) but highly absorbent. Discreet protection that moves with you for active days. Perfect for tight-fitting clothing while providing reliable protection."
+  }
+};
+
+// Quick view functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const quickViewBtns = document.querySelectorAll('.quick-view-btn');
+  const quickViewModal = document.getElementById('quickViewModal');
+  const closeModalBtns = document.querySelectorAll('.close-modal');
+  
+  quickViewBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const product = products[index + 1];
+      
+      // Set modal content
+      document.getElementById('modalProductName').textContent = product.name;
+      document.getElementById('modalProductImage').src = product.image;
+      document.getElementById('modalReviews').textContent = product.reviews;
+      document.getElementById('modalDescription').textContent = product.description;
+      
+      // Set sizes
+      const sizesContainer = document.getElementById('modalSizes');
+      sizesContainer.innerHTML = '';
+      product.sizes.forEach(size => {
+        sizesContainer.innerHTML += `
+          <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-100 text-green-800 text-sm font-medium border border-green-200">${size}</span>
+        `;
+      });
+      
+      // Set features
+      const featuresContainer = document.getElementById('modalFeatures');
+      featuresContainer.innerHTML = '';
+      product.features.forEach(feature => {
+        featuresContainer.innerHTML += `
+          <li class="flex items-start">
+            <svg class="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-700">${feature}</span>
+          </li>
+        `;
+      });
+      
+      // Show modal
+      quickViewModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  
+  // Close modal
+  closeModalBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      quickViewModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+  });
+  
+  // Close modal when clicking outside
+  quickViewModal.addEventListener('click', (e) => {
+    if (e.target === quickViewModal) {
+      quickViewModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  });
+  
+  // Close with ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      quickViewModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
 
 
-
-    <!-- WHY US SECTION STARTS =========================================================== -->
+<!-- WHY US SECTION STARTS =========================================================== -->
 <section class="why-section">
     <div class="why1">
-        <div class="why2">
-            <div class="why3">Our Unique Advantages</div>
-            <h2 class="why4">What Makes Aaifit Different</h2>
-        </div>
+        <div class="section-header">
+        <div class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Unique Advantages</div>
+        <br>
+        <span class="h22">What Makes <h2 class="whytitle">Aaifit </h2> Different</span>
+        
+        <!-- <div class="divider">
+             <div class="line"></div>  
+        </div> -->
+    </div>
         
         <div class="why5">
             <div class="why6">
@@ -480,7 +761,7 @@
     <div class="container">
         <div class="section-header" data-aos="fade-up">
             <div class="why2">
-            <div class="why3"> Testimonials</div>
+            <div class="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-semibold mb-4"> Testimonials</div>
             <h2 class="why4">What Our Customer Says</h2>
         </div>
         </div>
@@ -494,7 +775,7 @@
                     <p class="testimonial-text">AaiFit products have completely changed my period experience. The comfort and reliability are unmatched!</p>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="images/women-32.jpg" alt="Priya K.">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya K.">
                         </div>
                         <div class="author-info">
                             <h4>Priya K.</h4>
@@ -512,7 +793,7 @@
                     <p class="testimonial-text">As a doctor, I recommend AaiFit to all my patients. The health benefits are scientifically proven.</p>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="images/women-44.jpg" alt="Dr. Ananya S.">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Ananya S.">
                         </div>
                         <div class="author-info">
                             <h4>Dr. Ananya S.</h4>
@@ -530,7 +811,7 @@
                     <p class="testimonial-text">The social mission behind AaiFit is what drew me in, but the quality is what made me stay. Love these products!</p>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="images/women-68.jpg" alt="Neha R.">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha R.">
                         </div>
                         <div class="author-info">
                             <h4>Neha R.</h4>
@@ -550,63 +831,64 @@
 <!-- TESTIMONIALS SECTION ENDS -->
 
 
-    <!-- Features Section -->
-    <section class="bg-green-50 rounded-xl p-8 md:p-12 mb-20">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Key Features Across All Products</h2>
-        <p class="text-lg text-gray-600 mb-8">Our products are designed with hygiene, convenience, and durability in mind.</p>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-lg">
-            <div class="text-green-600 text-2xl mb-3">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Durable Construction</h3>
-            <p class="text-gray-600">Powder coated mild steel for long-lasting performance</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg">
-            <div class="text-green-600 text-2xl mb-3">
-              <i class="fas fa-cogs"></i>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Easy Maintenance</h3>
-            <p class="text-gray-600">Simple operation and easy to clean</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg">
-            <div class="text-green-600 text-2xl mb-3">
-              <i class="fas fa-leaf"></i>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Eco-Friendly</h3>
-            <p class="text-gray-600">Reduces environmental impact of sanitary waste</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg">
-            <div class="text-green-600 text-2xl mb-3">
-              <i class="fas fa-battery-three-quarters"></i>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Power Options</h3>
-            <p class="text-gray-600">Available in electric and non-electric models</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg">
-            <div class="text-green-600 text-2xl mb-3">
-              <i class="fas fa-tachometer-alt"></i>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">High Efficiency</h3>
-            <p class="text-gray-600">Fast operation with minimal energy consumption</p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg">
-            <div class="text-green-600 text-2xl mb-3">
-              <i class="fas fa-screwdriver"></i>
-            </div>
-            <h3 class="text-lg font-semibold mb-2">Easy Installation</h3>
-            <p class="text-gray-600">Simple wall mounting with included hardware</p>
-          </div>
+
+<!-- Features Section -->
+<section class="bg-green-50 rounded-xl p-8 md:p-12 mb-20">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6">Premium Features of Our Sanitary Pads</h2>
+    <p class="text-lg text-gray-600 mb-8">Designed for maximum comfort, protection, and environmental responsibility.</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg hover:shadow-md transition-all duration-300">
+        <div class="text-green-500 text-2xl mb-3">
+          <i class="fas fa-feather-alt"></i>
         </div>
+        <h3 class="text-lg font-semibold mb-2">Ultra-Thin Design</h3>
+        <p class="text-gray-600">Only 0.2cm thin for discreet comfort without compromising protection</p>
       </div>
-    </section>
+      
+      <div class="bg-white p-6 rounded-lg hover:shadow-md transition-all duration-300">
+        <div class="text-green-500 text-2xl mb-3">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Organic Materials</h3>
+        <p class="text-gray-600">Made with 85% biodegradable materials and plastic-free packaging</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg hover:shadow-md transition-all duration-300">
+        <div class="text-green-500 text-2xl mb-3">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Leak-Proof Protection</h3>
+        <p class="text-gray-600">360° SecureFit technology prevents shifting and leaks</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg hover:shadow-md transition-all duration-300">
+        <div class="text-green-500 text-2xl mb-3">
+          <i class="fas fa-spa"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Herbal Infused</h3>
+        <p class="text-gray-600">Aloe vera and neem extracts to soothe and protect sensitive skin</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg hover:shadow-md transition-all duration-300">
+        <div class="text-green-500 text-2xl mb-3">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Long-Lasting</h3>
+        <p class="text-gray-600">Up to 12 hours of protection for day or night use</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg hover:shadow-md transition-all duration-300">
+        <div class="text-green-500 text-2xl mb-3">
+          <i class="fas fa-wind"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Breathable</h3>
+        <p class="text-gray-600">Cotton cover and breathable back sheet for maximum comfort</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- CTA Section -->
     <section class="text-center mb-20">

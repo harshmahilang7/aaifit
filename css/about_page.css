@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 05:24:33
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-02 05:24:50
+ * @Last Modified time: 2025-07-06 01:43:45
  */
     /* ABOUT PAGE SECTION STARTS */
         /* Mission Section Styles */
@@ -104,7 +104,7 @@
     }
     
     .mission-card p {
-        color: var(--text-light);
+        color: black;
         font-size: 1rem;
         line-height: 1.7;
     }
@@ -236,7 +236,7 @@
         }
         
         .stats-grid {
-            grid-template-columns: 1fr 1fr;
+            /* grid-template-columns: 1fr 1fr; */
         }
         
         .testimonial-card {

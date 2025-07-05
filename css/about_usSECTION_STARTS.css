@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 19:31:01
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-05 05:11:50
+ * @Last Modified time: 2025-07-06 01:25:10
  */
 .about-section {
     padding: 5rem 0;
@@ -340,7 +340,7 @@
 
 @media (min-width: 1200px) {
     .about-section {
-        padding: 7rem 0;
+        padding: 7rem;
     }
 
     .hero-model2 {
@@ -357,7 +357,7 @@
 
 /* -------- */
 .about-section {
-  padding: 4rem 1rem;
+  padding: 4rem;
   background-color: #fff;
 }
 
@@ -645,5 +645,12 @@
   .about-feature,
   .about-icon {
     transition: none !important;
+  }
+}
+
+/* Applies to both phones and tablets (up to 1023px) */
+@media only screen and (max-width: 1023px) {
+  .about-section {
+    padding: 1rem;
   }
 }
