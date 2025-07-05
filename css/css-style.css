@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-01 04:59:16
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-05 05:06:39
+ * @Last Modified time: 2025-07-05 10:54:16
  */
 :root {
   --primary-dark: #1b5e20;
@@ -279,5 +279,17 @@
 .cursor-ring
 {
   display: none;
+}
+
+.section-header .title::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(129, 199, 132, 0.4);
+    z-index: -1;
+    transform: skewY(-2deg);
 }
 

@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-01 04:59:22
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-05 04:30:35
+  @Last Modified time: 2025-07-05 11:49:49
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
 
     <!-- Responsive viewport for mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 
     <!-- Website Title -->
     <title>AAIFIT | Smart Comfort for Every Cycle</title>
@@ -45,6 +46,58 @@
     <link rel="stylesheet" href="./css/why.css">
     <link rel="stylesheet" href="css/about_page.css">
     
+    <style>
+ 
+.title {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(2.8rem, 8vw, 5rem); /* Works responsively */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #263238;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.whytitle {
+  font-family: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem); /* Scales on small to large screens */
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+  margin: 0 0 1rem;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  cursor: none;
+  box-sizing: border-box;
+}
+.whytitle::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(129, 199, 132, 0.4);
+    z-index: -1;
+    transform: skewY(-2deg);
+}
+
+/* #slider {
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+} */
+
+
+
+
+    </style>
     
     <!--  AOS CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -213,7 +266,7 @@
         <div class="section-header">
         <div class="subtitle">Our Unique Advantages</div>
         <h4>What Makes</h4>
-        <h2 class="title">Aaifit Different</h2>
+        <h2 class="whytitle">Aaifit Different</h2>
         <!-- <div class="divider">
              <div class="line"></div>  
         </div> -->
@@ -277,8 +330,8 @@
         <div class="floating-element element-3"></div>
         
         <div class="section-header">
-            <span class="subtitle">PREMIUM COLLECTION</span>
-            <h2 class="title">Experience Unmatched Comfort</h2>
+            <span class="subtitle">Our Products</span><br>
+            <h2 class="title">Aaifit Premium Products</h2>
             <p class="description">Discover our innovative products designed for your well-being with premium materials and advanced technology.</p>
         </div>
         
