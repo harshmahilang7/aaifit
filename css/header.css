@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 19:31:01
  * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-04 21:03:57
+ * @Last Modified time: 2025-07-05 22:06:26
  */
 /* Header (Dark Green) */
 .header-container {
@@ -155,7 +155,7 @@ nav a:hover::after {
 .mobile-menu ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 25px;
     margin: 0;
