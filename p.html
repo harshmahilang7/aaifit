@@ -1,458 +1,538 @@
 <!-- 
   @Author: DASTAN_E_ALAM
-  @Date:   2025-07-06 01:46:00
+  @Date:   2025-07-06 04:02:34
   @Last Modified by:   DASTAN_E_ALAM
-  @Last Modified time: 2025-07-06 01:48:51
+  @Last Modified time: 2025-07-06 04:03:01
 -->
-
-<!-- HTML Document Type and Language Declaration -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Set character encoding to UTF-8 -->
     <meta charset="UTF-8">
-
-    <!-- Responsive viewport for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Website Title -->
-    <title>AAIFIT | Smart Comfort for Every Cycle</title>
-    <!-- ✅ Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- ✅ Font Awesome Icons (v6) -->
+    <title>Premium Feminine Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- ✅ Custom Website Stylesheet -->
-    <link rel="stylesheet" href="https://www.aaifit.com/assets/css/style.css">
-    <!--  AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- ✅ Bootstrap 5.3.7 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-          crossorigin="anonymous">
-          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- ✅ GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-
-
-    <!-- ✅ GSAP ScrollTrigger Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .product-card:hover .product-image {
+            transform: translateY(-10px) scale(1.05);
+        }
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
 </head>
-<body>
-<!-- PRODUCTS SECTION -->
-<section class="prod1">
-    <div class="prod2">
-        <div class="prod3">
-              <div class="why2">
-            <div class="why3"> Our Products</div>
-            <h2 class="why4">Aaifit Products</h2>
-            <div class="prod6">
-                <div class="prod7"></div>
-                <div class="prod8"><i class="fas fa-leaf"></i></div>
-                <div class="prod7"></div>
-            </div>
+<body class="bg-gradient-to-b from-green-50 to-white">
+    <!-- Header -->
+    <header class="py-8 text-center">
+        <div class="container mx-auto px-4">
+            <span class="inline-block bg-green-100 text-green-800 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wider uppercase animate-fade-in">PREMIUM FEMININE CARE</span>
+            <h1 class="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+                <span class="relative inline-block">
+                    <span class="relative z-10">Sanitary Pad</span>
+                    <span class="absolute bottom-2 left-0 w-full h-3 bg-green-100/60 z-0"></span>
+                </span>
+                Collection
+            </h1>
+            <div class="w-24 h-1.5 bg-gradient-to-r from-green-400 to-emerald-400 mx-auto mb-6 rounded-full"></div>
+            <p class="max-w-2xl mx-auto text-gray-600 text-lg md:text-xl leading-relaxed">Innovative designs for ultimate comfort, protection, and peace of mind</p>
         </div>
+    </header>
 
-        <div class="prod9">
-            <!-- PRODUCT 1 -->
-            <div class="prod10" data-category="daily">
-                <div class="prod11">Bestseller</div>
-                <div class="prod12">
-                    <div class="prod13"></div>
-                    <img src="https://www.aaifit.com/assets/img/one.png" alt="AAi Fit Daily Comfort" class="prod14">
-                    <div class="prod15">
-                        <div class="prod16">
-                            <button class="prod17" data-product="1">
-                                <span>Quick View</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                            <div class="prod18">
-                                <span><i class="fas fa-check-circle"></i> Cotton Cover</span>
-                                <span><i class="fas fa-check-circle"></i> 8-10 Hours</span>
-                                <span><i class="fas fa-check-circle"></i> Herbal Infused</span>
+    <!-- Product Section -->
+    <section class="py-12 md:py-16 lg:py-20 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                <!-- Product 1 - Daily Comfort -->
+                <div class="product-card group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border border-green-50 hover:border-green-100">
+                    <div class="absolute top-5 left-5 z-10">
+                        <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md animate-pulse">BESTSELLER</span>
+                    </div>
+                    
+                    <!-- Product Image -->
+                    <div class="h-64 sm:h-72 md:h-80 w-full overflow-hidden bg-gradient-to-br from-green-50 to-white flex items-center justify-center">
+                        <img src="https://www.aaifit.com/assets/img/one.png" alt="Daily Comfort" class="product-image w-full h-full object-contain transition duration-700 ease-out">
+                    </div>
+                    
+                    <!-- Product Info -->
+                    <div class="p-6 md:p-7">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl md:text-2xl font-bold font-playfair text-gray-900">Daily Comfort</h3>
+                            <div class="flex space-x-2">
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">R</span>
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">L</span>
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">XL</span>
                             </div>
                         </div>
+                        
+                        <!-- Rating -->
+                        <div class="flex items-center mb-5">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">428 reviews</span>
+                        </div>
+                        
+                        <!-- Features -->
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Cotton cover for breathability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">8-10 hours protection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Herbal infused with aloe vera</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- Quick View Button -->
+                        <button class="quick-view-btn w-full py-3 md:py-3.5 bg-white text-green-600 border-2 border-green-600 rounded-xl font-semibold transition duration-300 hover:bg-green-600 hover:text-white hover:shadow-md hover:border-transparent flex items-center justify-center text-base group" data-product="1">
+                            <svg class="w-5 h-5 mr-2 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            Quick View
+                        </button>
                     </div>
                 </div>
-                <div class="prod19">
-                    <h3 class="prod20">Daily Comfort</h3>
-                    <div class="prod21">
-                        <span class="prod22 active">R</span>
-                        <span class="prod22">L</span>
-                        <span class="prod22">XL</span>
-                    </div>
-                    <div class="prod23">
-                        <span>Hover for details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
 
-            <!-- PRODUCT 2 -->
-            <div class="prod10" data-category="overnight">
-                <div class="prod12">
-                    <div class="prod13"></div>
-                    <img src="https://www.aaifit.com/assets/img/one.png" alt="AAi Fit Night Protection" class="prod14">
-                    <div class="prod15">
-                        <div class="prod16">
-                            <button class="prod17" data-product="2">
-                                <span>Quick View</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                            <div class="prod18">
-                                <span><i class="fas fa-check-circle"></i> Extra Long</span>
-                                <span><i class="fas fa-check-circle"></i> 10-12 Hours</span>
-                                <span><i class="fas fa-check-circle"></i> Leak Proof</span>
+                <!-- Product 2 - Night Protection -->
+                <div class="product-card group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border border-green-50 hover:border-green-100">
+                    <!-- Product Image -->
+                    <div class="h-64 sm:h-72 md:h-80 w-full overflow-hidden bg-gradient-to-br from-green-50 to-white flex items-center justify-center">
+                        <img src="https://www.aaifit.com/assets/img/one.png" alt="Night Protection" class="product-image w-full h-full object-contain transition duration-700 ease-out">
+                    </div>
+                    
+                    <!-- Product Info -->
+                    <div class="p-6 md:p-7">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl md:text-2xl font-bold font-playfair text-gray-900">Night Protection</h3>
+                            <div class="flex space-x-2">
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">R</span>
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">L</span>
                             </div>
                         </div>
+                        
+                        <!-- Rating -->
+                        <div class="flex items-center mb-5">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">512 reviews</span>
+                        </div>
+                        
+                        <!-- Features -->
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Extra long for night use</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">10-12 hours protection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Leak-proof barriers</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- Quick View Button -->
+                        <button class="quick-view-btn w-full py-3 md:py-3.5 bg-white text-green-600 border-2 border-green-600 rounded-xl font-semibold transition duration-300 hover:bg-green-600 hover:text-white hover:shadow-md hover:border-transparent flex items-center justify-center text-base group" data-product="2">
+                            <svg class="w-5 h-5 mr-2 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            Quick View
+                        </button>
                     </div>
                 </div>
-                <div class="prod19">
-                    <h3 class="prod20">Night Protection</h3>
-                    <div class="prod21">
-                        <span class="prod22 active">R</span>
-                        <span class="prod22">L</span>
-                        <span class="prod22">XL</span>
-                    </div>
-                    <div class="prod23">
-                        <span>Hover for details</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
 
-            <!-- PRODUCT 3 -->
-            <div class="prod10" data-category="ultra">
-                <div class="prod11">New</div>
-                <div class="prod12">
-                    <div class="prod13"></div>
-                    <img src="https://www.aaifit.com/assets/img/one.png" alt="AAi Fit Ultra Thin" class="prod14">
-                    <div class="prod15">
-                        <div class="prod16">
-                            <button class="prod17" data-product="3">
-                                <span>Quick View</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                            <div class="prod18">
-                                <span><i class="fas fa-check-circle"></i> 0.2cm Thin</span>
-                                <span><i class="fas fa-check-circle"></i> 8 Hours</span>
-                                <span><i class="fas fa-check-circle"></i> Odor Control</span>
+                <!-- Product 3 - Ultra Thin -->
+                <div class="product-card group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border border-green-50 hover:border-green-100">
+                    <div class="absolute top-5 left-5 z-10">
+                        <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">NEW</span>
+                    </div>
+                    
+                    <!-- Product Image -->
+                    <div class="h-64 sm:h-72 md:h-80 w-full overflow-hidden bg-gradient-to-br from-green-50 to-white flex items-center justify-center">
+                        <img src="https://www.aaifit.com/assets/img/one.png" alt="Ultra Thin" class="product-image w-full h-full object-contain transition duration-700 ease-out">
+                    </div>
+                    
+                    <!-- Product Info -->
+                    <div class="p-6 md:p-7">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl md:text-2xl font-bold font-playfair text-gray-900">Ultra Thin</h3>
+                            <div class="flex space-x-2">
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">R</span>
+                                <span class="inline-flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-50 text-green-800 text-sm font-medium border border-green-100 shadow-sm">L</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="prod19">
-                    <h3 class="prod20">Ultra Thin</h3>
-                    <div class="prod21">
-                        <span class="prod22 active">R</span>
-                        <span class="prod22">L</span>
-                    </div>
-                    <div class="prod23">
-                        <span>Hover for details</span>
-                        <i class="fas fa-chevron-down"></i>
+                        
+                        <!-- Rating -->
+                        <div class="flex items-center mb-5">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">387 reviews</span>
+                        </div>
+                        
+                        <!-- Features -->
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Only 0.2cm thin</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">8 hours protection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Odor control technology</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- Quick View Button -->
+                        <button class="quick-view-btn w-full py-3 md:py-3.5 bg-white text-green-600 border-2 border-green-600 rounded-xl font-semibold transition duration-300 hover:bg-green-600 hover:text-white hover:shadow-md hover:border-transparent flex items-center justify-center text-base group" data-product="3">
+                            <svg class="w-5 h-5 mr-2 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            Quick View
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- QUICK VIEW MODAL -->
-<div class="prod24">
-    <div class="prod25"></div>
-    <div class="prod26">
-        <button class="prod27">&times;</button>
-        <div class="prod28">
-            <!-- Content loaded via JavaScript -->
-        </div>
-    </div>
-</div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Quick view modal functionality
-    const quickViewButtons = document.querySelectorAll('.prod17');
-    const quickViewModal = document.querySelector('.prod24');
-    const modalClose = document.querySelector('.prod27');
-    const modalOverlay = document.querySelector('.prod25');
-    const modalBody = document.querySelector('.prod28');
-    
-    // Product data for quick view
-    const products = {
-        1: {
-            name: "Daily Comfort",
-            image: "https://www.aaifit.com/assets/img/one.png",
-            description: "Our best-selling daily pad with cotton cover for ultimate comfort and breathability. Perfect for regular flow days with up to 8-10 hours of protection. Infused with natural herbal extracts to soothe and protect sensitive skin.",
-            features: [
-                "100% organic cotton cover for breathability",
-                "Herbal infused with neem and aloe vera",
-                "Advanced absorption core for 8-10 hour protection",
-                "Breathable back sheet to prevent irritation",
-                "Wings for secure fit and leak protection",
-                "Dermatologically tested for sensitive skin"
-            ],
-            specs: {
-                "Size Available": "Regular, Large, XL",
-                "Absorbency": "Medium to High",
-                "Cover Material": "Organic Cotton",
-                "Length": "24cm (Regular), 28cm (Large), 32cm (XL)",
-                "Pack Quantity": "10 pads per pack"
-            }
-        },
-        2: {
-            name: "Night Protection",
-            image: "https://www.aaifit.com/assets/img/one.png",
-            description: "Extra long and absorbent for overnight protection. Special back design prevents leaks while you sleep comfortably. The wider back provides additional coverage for worry-free nights.",
-            features: [
-                "35cm length for full coverage during sleep",
-                "Super absorbent core for heavy flow",
-                "Soft, non-woven top layer for comfort",
-                "Leak-proof barriers on sides and back",
-                "Aloe vera infused to prevent irritation",
-                "Extra wide back for maximum protection"
-            ],
-            specs: {
-                "Size Available": "Regular, Large",
-                "Absorbency": "Super",
-                "Cover Material": "Soft Non-Woven",
-                "Length": "35cm",
-                "Pack Quantity": "8 pads per pack"
-            }
-        },
-        3: {
-            name: "Ultra Thin",
-            image: "https://www.aaifit.com/assets/img/one.png",
-            description: "Incredibly thin (just 2mm) but highly absorbent. Discreet protection that moves with you for active days. Perfect for tight-fitting clothing while providing reliable protection.",
-            features: [
-                "Only 0.2cm thin for discreet wear",
-                "Quick-dry surface keeps you comfortable",
-                "Flexible design for active movement",
-                "Odor control technology",
-                "Dermatologically tested",
-                "Central absorption channel for security"
-            ],
-            specs: {
-                "Size Available": "Regular, Large",
-                "Absorbency": "Medium",
-                "Cover Material": "Silky Cover",
-                "Length": "24cm (Regular), 28cm (Large)",
-                "Thickness": "2mm",
-                "Pack Quantity": "12 pads per pack"
-            }
-        }
-    };
-    
-    // Open modal with product data
-    quickViewButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const productId = button.getAttribute('data-product');
-            const product = products[productId];
+    <!-- Modern Quick View Modal -->
+    <div class="fixed inset-0 z-[1001] hidden overflow-y-auto" id="quickViewModal">
+        <div class="flex items-center justify-center min-h-screen pt-5 px-1 pb-1 text-center sm:block sm:p-0">
+            <!-- Background overlay -->
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-75 backdrop-blur-sm"></div>
+            </div>
             
-            modalBody.innerHTML = `
-                <div class="modal-product">
-                    <div class="modal-product-image">
-                        <img src="${product.image}" alt="${product.name}">
+            <!-- Modal content -->
+            <div class="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl w-full mx-4">
+                <div class="bg-white px-4 py-4 sm:p-10">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-3xl font-bold font-playfair text-gray-900" id="modalTitle">Product Details</h3>
+                        <button type="button" class="close-modal text-gray-400 hover:text-gray-500 focus:outline-none transition duration-150">
+                            <span class="sr-only">Close</span>
+                            <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="modal-product-info">
-                        <h3>${product.name}</h3>
-                        <p class="product-description">${product.description}</p>
-                        <div class="product-features-list">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                ${product.features.map(feature => `<li><i class="fas fa-check-circle"></i> ${feature}</li>`).join('')}
-                            </ul>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                        <!-- Product Image -->
+                        <div class="bg-gradient-to-br from-green-50 to-white rounded-xl p-8 flex items-center justify-center h-80 sm:h-96 shadow-inner">
+                            <img src="" alt="" class="max-h-full max-w-full transform hover:scale-105 transition duration-500" id="modalProductImage">
                         </div>
-                        <div class="product-specs">
-                            <h4>Specifications:</h4>
-                            ${Object.entries(product.specs).map(([key, value]) => `
-                                <div class="spec-row">
-                                    <div class="spec-title">${key}</div>
-                                    <div class="spec-value">${value}</div>
+                        
+                        <!-- Product Details -->
+                        <div class="overflow-y-auto max-h-[calc(100vh-300px)] sm:max-h-[calc(100vh-200px)] pr-2">
+                            <div class="flex items-center mb-4">
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
                                 </div>
-                            `).join('')}
+                                <span class="text-gray-500 text-sm ml-2" id="modalReviews">428 reviews</span>
+                            </div>
+                            
+                            <h2 class="text-3xl md:text-4xl font-bold font-playfair mb-6 leading-tight" id="modalProductName">Daily Comfort</h2>
+                            
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-lg md:text-xl mb-3 text-gray-800">Available Sizes:</h4>
+                                <div class="flex space-x-3" id="modalSizes">
+                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-800 text-base font-medium border-2 border-green-200 shadow-sm">R</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-7">
+                                <h4 class="font-semibold text-lg md:text-xl mb-3 text-gray-800">Key Features:</h4>
+                                <ul class="space-y-3.5" id="modalFeatures">
+                                    <li class="flex items-start">
+                                        <svg class="h-6 w-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="text-gray-700 text-base">Cotton cover for breathability</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-lg md:text-xl mb-3 text-gray-800">Product Description:</h4>
+                                <p class="text-gray-700 text-base leading-relaxed" id="modalDescription">
+                                    Our best-selling daily pad with cotton cover for ultimate comfort and breathability. Perfect for regular flow days with up to 8-10 hours of protection.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            `;
-            
-            quickViewModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
-    });
-    
-    // Close modal
-    modalClose.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', closeModal);
-    
-    // Close with ESC key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closeModal();
-        }
-    });
-    
-    function closeModal() {
-        quickViewModal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-    
-    // Product hover effects
-    const productCards = document.querySelectorAll('.prod10');
-    
-    productCards.forEach(card => {
-        // Tilt effect on mouse move
-        card.addEventListener('mousemove', (e) => {
-            const x = e.offsetX;
-            const y = e.offsetY;
-            const centerX = card.offsetWidth / 2;
-            const centerY = card.offsetHeight / 2;
-            
-            const angleX = (y - centerY) / 20;
-            const angleY = (centerX - x) / 20;
-            
-            card.style.transform = `translateY(-10px) scale(1.02) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-        });
-        
-        // Reset on mouse leave
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(-10px) scale(1.02) rotateX(0) rotateY(0)';
-        });
-    });
-    
-    // Animate benefits cards on scroll
-    const benefitCards = document.querySelectorAll('.prod31');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
+                <div class="bg-green-50 px-6 py-5 sm:px-10 sm:py-6 flex justify-end">
+                    <button type="button" class="close-modal inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-xl text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-200">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Product data
+        const products = {
+            1: {
+                name: "Daily Comfort",
+                image: "https://www.aaifit.com/assets/img/one.png",
+                reviews: "428 reviews",
+                sizes: ["R", "L", "XL"],
+                features: [
+                    "100% organic cotton cover for breathability",
+                    "Herbal infused with neem and aloe vera",
+                    "Advanced absorption core for 8-10 hour protection",
+                    "Breathable back sheet to prevent irritation",
+                    "Wings for secure fit and leak protection",
+                    "Dermatologically tested for sensitive skin"
+                ],
+                description: "Our best-selling daily pad with cotton cover for ultimate comfort and breathability. Perfect for regular flow days with up to 8-10 hours of protection. Infused with natural herbal extracts to soothe and protect sensitive skin."
+            },
+            2: {
+                name: "Night Protection",
+                image: "https://www.aaifit.com/assets/img/one.png",
+                reviews: "512 reviews",
+                sizes: ["R", "L"],
+                features: [
+                    "35cm length for full coverage during sleep",
+                    "Super absorbent core for heavy flow",
+                    "Soft, non-woven top layer for comfort",
+                    "Leak-proof barriers on sides and back",
+                    "Aloe vera infused to prevent irritation",
+                    "Extra wide back for maximum protection"
+                ],
+                description: "Extra long and absorbent for overnight protection. Special back design prevents leaks while you sleep comfortably. The wider back provides additional coverage for worry-free nights."
+            },
+            3: {
+                name: "Ultra Thin",
+                image: "https://www.aaifit.com/assets/img/one.png",
+                reviews: "387 reviews",
+                sizes: ["R", "L"],
+                features: [
+                    "Only 0.2cm thin for discreet wear",
+                    "Quick-dry surface keeps you comfortable",
+                    "Flexible design for active movement",
+                    "Odor control technology",
+                    "Dermatologically tested",
+                    "Central absorption channel for security"
+                ],
+                description: "Incredibly thin (just 2mm) but highly absorbent. Discreet protection that moves with you for active days. Perfect for tight-fitting clothing while providing reliable protection."
             }
-        });
-    }, {
-        threshold: 0.1
-    });
-    
-    benefitCards.forEach((card, index) => {
-        card.style.opacity = 0;
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-        observer.observe(card);
-    });
-});
-</script>
-<script>
-    /* <!-- WHY US SECTION STARTS=========================================================== --> */
- document.addEventListener('DOMContentLoaded', function() {
-        gsap.registerPlugin(ScrollTrigger);
-        
-        // Header animations
-        gsap.to(".why3", {
-            scrollTrigger: {
-                trigger: ".why-section",
-                start: "top 70%",
-                toggleActions: "play none none none"
-            },
-            duration: 0.8,
-            scale: 1,
-            opacity: 1,
-            ease: "elastic.out(1, 0.5)"
-        });
-        
-        gsap.to(".why4", {
-            scrollTrigger: {
-                trigger: ".why-section",
-                start: "top 70%",
-                toggleActions: "play none none none"
-            },
-            duration: 1,
-            y: 0,
-            opacity: 1,
-            ease: "back.out(4)"
-        });
-        
-        // Card and icon animations - POP IN EFFECT TOGETHER
-        gsap.to(".why6", {
-            scrollTrigger: {
-                trigger: ".why5",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            },
-            duration: 0.8,
-            scale: 1,
-            y: 0,
-            opacity: 1,
-            stagger: 0.2,
-            ease: "back.out(2)",
-            onStart: function() {
-                // Animate icons at the same time as cards
-                gsap.to(".why7", {
-                    duration: 0.6,
-                    scale: 1,
-                    stagger: 0.1,
-                    ease: "elastic.out(1, 0.5)"
+        };
+
+        // Initialize GSAP animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate product cards on scroll
+            gsap.registerPlugin(ScrollTrigger);
+            
+            gsap.utils.toArray(".product-card").forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    y: 50,
+                    opacity: 0,
+                    duration: 0.8,
+                    delay: i * 0.1,
+                    ease: "power3.out"
                 });
-            }
-        });
-        
-        // 3D TILT EFFECT
-        const cards = document.querySelectorAll('.why6');
-        cards.forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const xAxis = (card.offsetWidth / 2 - e.offsetX) / 15;
-                const yAxis = (card.offsetHeight / 2 - e.offsetY) / 15;
-                gsap.to(card, {
-                    duration: 0.5,
-                    rotateY: xAxis,
-                    rotateX: yAxis,
-                    ease: "power1.out"
+            });
+
+            // Animate header elements
+            gsap.from("header span", {
+                y: -20,
+                opacity: 0,
+                duration: 0.8,
+                delay: 0.2,
+                ease: "back.out"
+            });
+
+            gsap.from("header h1", {
+                y: -30,
+                opacity: 0,
+                duration: 0.8,
+                delay: 0.4,
+                ease: "back.out"
+            });
+
+            gsap.from("header p", {
+                y: -20,
+                opacity: 0,
+                duration: 0.8,
+                delay: 0.6,
+                ease: "back.out"
+            });
+
+            // Quick view functionality
+            const quickViewBtns = document.querySelectorAll('.quick-view-btn');
+            const quickViewModal = document.getElementById('quickViewModal');
+            const closeModalBtns = document.querySelectorAll('.close-modal');
+            
+            quickViewBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const productId = btn.getAttribute('data-product');
+                    const product = products[productId];
+                    
+                    // Set modal content
+                    document.getElementById('modalProductName').textContent = product.name;
+                    document.getElementById('modalProductImage').src = product.image;
+                    document.getElementById('modalReviews').textContent = product.reviews;
+                    document.getElementById('modalDescription').textContent = product.description;
+                    
+                    // Set sizes
+                    const sizesContainer = document.getElementById('modalSizes');
+                    sizesContainer.innerHTML = '';
+                    product.sizes.forEach(size => {
+                        sizesContainer.innerHTML += `
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-800 text-base font-medium border-2 border-green-200 shadow-sm">${size}</span>
+                        `;
+                    });
+                    
+                    // Set features
+                    const featuresContainer = document.getElementById('modalFeatures');
+                    featuresContainer.innerHTML = '';
+                    product.features.forEach(feature => {
+                        featuresContainer.innerHTML += `
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700 text-base">${feature}</span>
+                            </li>
+                        `;
+                    });
+                    
+                    // Show modal with animation
+                    gsap.fromTo(quickViewModal, 
+                        { opacity: 0, y: 50 },
+                        { 
+                            opacity: 1, 
+                            y: 0,
+                            duration: 0.3,
+                            ease: "power2.out",
+                            onStart: () => {
+                                quickViewModal.classList.remove('hidden');
+                                document.body.style.overflow = 'hidden';
+                            }
+                        }
+                    );
                 });
             });
             
-            card.addEventListener('mouseleave', () => {
-                gsap.to(card, {
-                    duration: 0.7,
-                    rotateY: 0,
-                    rotateX: 0,
-                    ease: "elastic.out(1,0.3)"
+            // Close modal
+            closeModalBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    gsap.to(quickViewModal, {
+                        opacity: 0,
+                        y: 50,
+                        duration: 0.2,
+                        ease: "power2.in",
+                        onComplete: () => {
+                            quickViewModal.classList.add('hidden');
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
                 });
             });
+            
+            // Close modal when clicking outside
+            quickViewModal.addEventListener('click', (e) => {
+                if (e.target === quickViewModal) {
+                    gsap.to(quickViewModal, {
+                        opacity: 0,
+                        y: 50,
+                        duration: 0.2,
+                        ease: "power2.in",
+                        onComplete: () => {
+                            quickViewModal.classList.add('hidden');
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                }
+            });
+            
+            // Close with ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    gsap.to(quickViewModal, {
+                        opacity: 0,
+                        y: 50,
+                        duration: 0.2,
+                        ease: "power2.in",
+                        onComplete: () => {
+                            quickViewModal.classList.add('hidden');
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                }
+            });
         });
-    });
-/* <!-- WHY US SECTION ENDS=========================================================== --> */
-</script>
-
-<!-- Add AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<!-- Add AOS JS and initialize -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    // Initialize AOS (Animate On Scroll)
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        offset: 100
-    });
-    
-</script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-<!-- TOP FOOTER SECTION STARTS================================================== -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<script src="https://www.aaifit.com/assets/js/script.js"></script>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </script>
 </body>
 </html>
-<!-- TOP FOOTER SECTION ENDS================================================== -->
-
-
-
