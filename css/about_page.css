@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 05:24:33
  * @Last Modified by:   Dastan Alam
- * @Last Modified time: 2025-07-06 05:14:51 PM   17:07
+ * @Last Modified time: 2025-07-06 05:17:22 PM   17:07
  */
     /* ABOUT PAGE SECTION STARTS */
         /* Mission Section Styles */
@@ -126,9 +126,9 @@
         transform: scaleX(1);
     }
      .testimonials-section {
-        padding: 3rem 0;
+        padding: 2rem 0;
         background-color: var(--white);
-        
+        padding-bottom: 120px;
     }
     
     .testimonials-slider {
