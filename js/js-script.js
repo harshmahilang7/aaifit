@@ -1,3 +1,9 @@
+/**
+ * @Author: Dastan Alam
+ * @Date:   2025-07-02 07:31:01 PM   19:07
+ * @Last Modified by:   Dastan Alam
+ * @Last Modified time: 2025-07-06 06:07:16 PM   18:07
+ */
   // Custom Cursor
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorRing = document.querySelector('.cursor-ring');
@@ -330,9 +336,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, { threshold: 0.5 });
   
-  document.querySelector('.sus16').querySelectorAll('*').forEach(el => {
-    statsObserver.observe(el);
-  });
+//   document.querySelector('.sus16').querySelectorAll('*').forEach(el => {
+//     statsObserver.observe(el);
+//   });
   
   // Card hover effects
   const cards = document.querySelectorAll('.sus9');
@@ -554,20 +560,20 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('load', animateOnScroll);
         window.addEventListener('scroll', animateOnScroll);
         
-        // Function to animate tab content
-        function animateContent(tabContent) {
-            const items = tabContent.querySelectorAll('.animate-slidein, .animate-slideup, .animate-pop, .animate-fadein');
-            items.forEach((item, index) => {
-                item.style.animationPlayState = 'paused';
-                setTimeout(() => {
-                    item.style.animationPlayState = 'running';
-                }, index * 100);
-            });
-        }
+        // // Function to animate tab content
+        // function animateContent(tabContent) {
+        //     const items = tabContent.querySelectorAll('.animate-slidein, .animate-slideup, .animate-pop, .animate-fadein');
+        //     items.forEach((item, index) => {
+        //         item.style.animationPlayState = 'paused';
+        //         setTimeout(() => {
+        //             item.style.animationPlayState = 'running';
+        //         }, index * 100);
+        //     });
+        // }
         
         // Animate the initial active tab
         const initialTab = document.querySelector('.tab-content.active');
-        animateContent(initialTab);
+        // animateContent(initialTab);
     });
 // PRIVACY POLICY SECTION ENDS=================================
 // PRODUCT SLIDER STARTS========================

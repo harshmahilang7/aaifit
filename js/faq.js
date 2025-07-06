@@ -1,8 +1,8 @@
 /**
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 16:10:07
- * @Last Modified by:   DASTAN_E_ALAM
- * @Last Modified time: 2025-07-05 12:01:15
+ * @Last Modified by:   Dastan Alam
+ * @Last Modified time: 2025-07-06 06:04:00 PM   18:07
  */
 document.addEventListener('DOMContentLoaded', function () {
     // Enhanced FAQ toggle functionality
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const otherAnswer = otherItem.querySelector('.faq-answer');
                     
                     // For smooth transition on close
-                    otherAnswer.style.maxHeight = otherAnswer.scrollHeight + 'px';
+                    otherAnswer.style.maxHeight = otherAnswer.scrollHeight+ 'px';
                     otherAnswer.offsetHeight; // force reflow
                     otherAnswer.style.maxHeight = '0';
                 }
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (item.classList.contains('active')) {
                 answer.style.maxHeight = 'none'; // reset
                 const height = answer.scrollHeight;
-                answer.style.maxHeight = height + 'px';
+                answer.style.maxHeight = height+20 + 'px';
             } else {
                 answer.style.maxHeight = answer.scrollHeight + 'px';
                 answer.offsetHeight; // force reflow
