@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-01 04:59:16
  * @Last Modified by:   Dastan Alam
- * @Last Modified time: 2025-07-06 04:49:02 PM   16:07
+ * @Last Modified time: 2025-07-06 05:13:32 PM   17:07
  */
 :root {
   --primary-dark: #1b5e20;
@@ -99,8 +99,7 @@
 
 /* BREADCRUM SECTION STARTS==================================== */
 .breadcrumb-hero {
-            background: linear-gradient(rgba(27, 94, 32, 0.7), rgba(27, 94, 32, 0.7)), 
-                        url('../images/img-bgg.jpeg') no-repeat center center;
+            linear-gradient(#1b5e2094), url(../images/img-bgg.jpeg) no-repeat center center
             background-size: cover;
                 padding: 10rem 2rem 4rem;
     /* margin: 0rem 0rem 3rem; */
