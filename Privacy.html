@@ -1,3 +1,9 @@
+<!-- 
+  @Author: Dastan Alam
+  @Date:   2025-07-02 07:31:01 PM   19:07
+  @Last Modified by:   Dastan Alam
+  @Last Modified time: 2025-07-06 04:19:31 PM   16:07
+-->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
 
@@ -7,7 +13,7 @@
 
     <!-- Responsive viewport for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <script src="https://cdn.tailwindcss.com"></script>
     <!-- Website Title -->
     <title>AAIFIT | Smart Comfort for Every Cycle</title>
     <!-- &#9989; Google Fonts: Poppins -->
@@ -27,6 +33,8 @@
 
     <!-- &#9989; GSAP ScrollTrigger Plugin -->
     <script src="js/3.11.4-ScrollTrigger.min.js"></script>
+       <link rel="stylesheet" href="./css/header.css">
+        <script src="./js/head.js"></script>
 
 </head>
 <body>
@@ -97,127 +105,203 @@
 <!-- BREADCRUMB ENDS ===================================================== -->
 
 <!-- PRIVACY POLICY SECTION =============================================== -->
-<section class="privacy-section">
-    <div class="container">
-        <div class="privacy-header">
-           
-            <div class="why2">
-            <div class="why3">Privacy &amp; Policy</div>
-            <h2 class="why4">Our Privacy &amp; Policy</h2>
-        </div>
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <div class="inline-flex flex-col items-center">
+                <span class="text-lg font-semibold text-green-600 mb-2">Privacy & Policy</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Our Privacy & Policy</h2>
+                <div class="mt-2 h-1 w-20 bg-green-600 rounded-full"></div>
+            </div>
         </div>
         
         <!-- Animated Tabs Navigation -->
-        <div class="privacy-tabs">
-            <div class="tab-buttons">
-                <button class="tab-btn active" data-tab="data-collection">Data Collection</button>
-                <button class="tab-btn" data-tab="data-use">Data Usage</button>
-                <button class="tab-btn" data-tab="data-protection">Protection</button>
-                <button class="tab-btn" data-tab="your-rights">Your Rights</button>
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 ease-in-out bg-green-600 text-white" data-tab="data-collection">
+                    Data Collection
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="data-use">
+                    Data Usage
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="data-protection">
+                    Protection
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium transition-all duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-gray-300" data-tab="your-rights">
+                    Your Rights
+                </button>
             </div>
             
             <!-- Tab Contents with Animation -->
-            <div class="tab-contents">
-                <div class="tab-content active animate-fadein" id="data-collection">
-                    <h3><i class="fas fa-database tab-icon"></i> Information We Collect</h3>
-                    <p>We only collect information necessary to provide our services:</p>
-                    <ul class="privacy-list">
-                        <li class="animate-slidein" style="--delay: 0.1s">
-                            <i class="fas fa-user-circle"></i>
-                            <span><strong>Contact Information:</strong> Name, email when you communicate with us</span>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden p-6 sm:p-8">
+                <!-- Data Collection Tab -->
+                <div class="tab-content active opacity-100 transition-opacity duration-300" id="data-collection">
+                    <h3 class="flex items-center text-xl sm:text-2xl font-bold text-gray-800 mb-6">
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm3 6a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                        </svg>
+                        Information We Collect
+                    </h3>
+                    <p class="text-gray-600 mb-6">We only collect information necessary to provide our services:</p>
+                    <ul class="space-y-4">
+                        <li class="animate-slidein opacity-0 flex items-start">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong class="text-gray-900">Contact Information:</strong> Name, email when you communicate with us</span>
                         </li>
-                        <li class="animate-slidein" style="--delay: 0.2s">
-                            <i class="fas fa-laptop"></i>
-                            <span><strong>Technical Data:</strong> IP address, browser type for website analytics</span>
+                        <li class="animate-slidein opacity-0 flex items-start">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 0h6v4H7V5zm0 6h6v4H7v-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong class="text-gray-900">Technical Data:</strong> IP address, browser type for website analytics</span>
                         </li>
-                        <li class="animate-slidein" style="--delay: 0.3s">
-                            <i class="fas fa-envelope"></i>
-                            <span><strong>Communication Data:</strong> Messages you send through our contact forms</span>
+                        <li class="animate-slidein opacity-0 flex items-start">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <span class="text-gray-700"><strong class="text-gray-900">Communication Data:</strong> Messages you send through our contact forms</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="tab-content animate-fadein" id="data-use">
-                    <h3><i class="fas fa-cogs tab-icon"></i> How We Use Information</h3>
-                    <div class="usage-grid">
-                        <div class="usage-card animate-pop" style="--delay: 0.1s">
-                            <div class="usage-icon"><i class="fas fa-comments"></i></div>
-                            <h4>Communication</h4>
-                            <p>To respond to your inquiries and provide information</p>
+                <!-- Data Usage Tab -->
+                <div class="tab-content opacity-0 h-0 overflow-hidden transition-all duration-300" id="data-use">
+                    <h3 class="flex items-center text-xl sm:text-2xl font-bold text-gray-800 mb-6">
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                        </svg>
+                        How We Use Information
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="animate-pop scale-95 opacity-0 bg-white p-6 rounded-lg border border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-md">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Communication</h4>
+                            <p class="text-gray-600">To respond to your inquiries and provide information</p>
                         </div>
-                        <div class="usage-card animate-pop" style="--delay: 0.2s">
-                            <div class="usage-icon"><i class="fas fa-chart-line"></i></div>
-                            <h4>Improvements</h4>
-                            <p>To analyze website usage and improve our content</p>
+                        <div class="animate-pop scale-95 opacity-0 bg-white p-6 rounded-lg border border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-md">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Improvements</h4>
+                            <p class="text-gray-600">To analyze website usage and improve our content</p>
                         </div>
-                        <div class="usage-card animate-pop" style="--delay: 0.3s">
-                            <div class="usage-icon"><i class="fas fa-bell"></i></div>
-                            <h4>Updates</h4>
-                            <p>To send important updates (only with your consent)</p>
+                        <div class="animate-pop scale-95 opacity-0 bg-white p-6 rounded-lg border border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-md">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Updates</h4>
+                            <p class="text-gray-600">To send important updates (only with your consent)</p>
                         </div>
-                        <div class="usage-card animate-pop" style="--delay: 0.4s">
-                            <div class="usage-icon"><i class="fas fa-shield-alt"></i></div>
-                            <h4>Security</h4>
-                            <p>To monitor and protect the security of our website</p>
+                        <div class="animate-pop scale-95 opacity-0 bg-white p-6 rounded-lg border border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-md">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Security</h4>
+                            <p class="text-gray-600">To monitor and protect the security of our website</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="tab-content animate-fadein" id="data-protection">
-                    <h3><i class="fas fa-lock tab-icon"></i> Data Protection</h3>
-                    <div class="protection-steps">
-                        <div class="step animate-slidein" style="--delay: 0.1s">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
-                                <h4>Encryption</h4>
-                                <p>All data transmissions are encrypted using 256-bit SSL technology</p>
+                <!-- Data Protection Tab -->
+                <div class="tab-content opacity-0 h-0 overflow-hidden transition-all duration-300" id="data-protection">
+                    <h3 class="flex items-center text-xl sm:text-2xl font-bold text-gray-800 mb-6">
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Data Protection
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="animate-slidein opacity-0 flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4 mt-0.5 font-bold">1</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-1">Encryption</h4>
+                                <p class="text-gray-600">All data transmissions are encrypted using 256-bit SSL technology</p>
                             </div>
                         </div>
-                        <div class="step animate-slidein" style="--delay: 0.2s">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
-                                <h4>Access Control</h4>
-                                <p>Strict access controls limit who can view your information</p>
+                        <div class="animate-slidein opacity-0 flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4 mt-0.5 font-bold">2</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-1">Access Control</h4>
+                                <p class="text-gray-600">Strict access controls limit who can view your information</p>
                             </div>
                         </div>
-                        <div class="step animate-slidein" style="--delay: 0.3s">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
-                                <h4>Regular Audits</h4>
-                                <p>We conduct regular security reviews of our systems</p>
+                        <div class="animate-slidein opacity-0 flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4 mt-0.5 font-bold">3</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-1">Regular Audits</h4>
+                                <p class="text-gray-600">We conduct regular security reviews of our systems</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="tab-content animate-fadein" id="your-rights">
-                    <h3><i class="fas fa-user-shield tab-icon"></i> Your Privacy Rights</h3>
-                    <div class="rights-cards">
-                        <div class="right-card animate-slideup" style="--delay: 0.1s">
-                            <i class="fas fa-eye"></i>
-                            <h4>Right to Access</h4>
-                            <p>Request a copy of your personal data we hold</p>
+                <!-- Your Rights Tab -->
+                <div class="tab-content opacity-0 h-0 overflow-hidden transition-all duration-300" id="your-rights">
+                    <h3 class="flex items-center text-xl sm:text-2xl font-bold text-gray-800 mb-6">
+                        <svg class="w-6 h-6 text-green-600 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z"></path>
+                        </svg>
+                        Your Privacy Rights
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                        <div class="animate-slideup opacity-0 bg-gray-50 p-5 rounded-lg text-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Right to Access</h4>
+                            <p class="text-gray-600 text-sm">Request a copy of your personal data we hold</p>
                         </div>
-                        <div class="right-card animate-slideup" style="--delay: 0.2s">
-                            <i class="fas fa-edit"></i>
-                            <h4>Right to Rectify</h4>
-                            <p>Update or correct inaccurate information</p>
+                        <div class="animate-slideup opacity-0 bg-gray-50 p-5 rounded-lg text-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Right to Rectify</h4>
+                            <p class="text-gray-600 text-sm">Update or correct inaccurate information</p>
                         </div>
-                        <div class="right-card animate-slideup" style="--delay: 0.3s">
-                            <i class="fas fa-trash-alt"></i>
-                            <h4>Right to Delete</h4>
-                            <p>Request deletion of your personal data</p>
+                        <div class="animate-slideup opacity-0 bg-gray-50 p-5 rounded-lg text-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Right to Delete</h4>
+                            <p class="text-gray-600 text-sm">Request deletion of your personal data</p>
                         </div>
-                        <div class="right-card animate-slideup" style="--delay: 0.4s">
-                            <i class="fas fa-ban"></i>
-                            <h4>Right to Object</h4>
-                            <p>Opt-out of communications</p>
+                        <div class="animate-slideup opacity-0 bg-gray-50 p-5 rounded-lg text-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Right to Object</h4>
+                            <p class="text-gray-600 text-sm">Opt-out of communications</p>
                         </div>
                     </div>
-                    <div class="contact-privacy animate-fadein" style="--delay: 0.5s">
-                        <p>To exercise any of these rights, please contact our Data Protection Officer:</p>
-                        <a href="mailto:privacy@aaifit.com" class="privacy-email">
-                            <i class="fas fa-envelope"></i> privacy@aaifit.com
+                    <div class="animate-fadein opacity-0 bg-green-50 p-4 rounded-lg">
+                        <p class="text-gray-700 mb-3">To exercise any of these rights, please contact our Data Protection Officer:</p>
+                        <a href="mailto:privacy@aaifit.com" class="inline-flex items-center text-green-600 font-medium hover:text-green-800">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            privacy@aaifit.com
                         </a>
                     </div>
                 </div>
@@ -225,19 +309,117 @@
         </div>
         
         <!-- Policy Update Section -->
-        <div class="policy-update animate-fadein">
-            <div class="update-alert">
-                <i class="fas fa-bell"></i>
-                <div class="update-content">
-                    <h4>Policy Updates</h4>
-                    <p>This policy was last updated on <strong>June 15, 2025</strong>. We may update this policy periodically.</p>
+        <div class="max-w-5xl mx-auto mt-12 animate-fadein opacity-0">
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h4 class="text-sm font-semibold text-yellow-800">Policy Updates</h4>
+                        <p class="text-sm text-yellow-700">This policy was last updated on <strong>June 15, 2025</strong>. We may update this policy periodically.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SECTION ENDS ======================================================== -->
+<!-- JavaScript for Tab Functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active', 'bg-green-600', 'text-white'));
+                tabButtons.forEach(btn => btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300'));
+                tabContents.forEach(content => {
+                    content.classList.remove('active', 'opacity-100');
+                    content.classList.add('opacity-0', 'h-0');
+                });
+                
+                // Add active class to clicked button
+                button.classList.add('active', 'bg-green-600', 'text-white');
+                button.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+                
+                // Show corresponding content
+                const tabId = button.getAttribute('data-tab');
+                const tabContent = document.getElementById(tabId);
+                tabContent.classList.remove('opacity-0', 'h-0');
+                tabContent.classList.add('active', 'opacity-100');
+                
+                // Trigger animations for elements inside the tab
+                if (tabId === 'data-collection') {
+                    animateElements('.animate-slidein', 'opacity-100');
+                } else if (tabId === 'data-use') {
+                    animateElements('.animate-pop', 'scale-100 opacity-100');
+                } else if (tabId === 'data-protection') {
+                    animateElements('.animate-slidein', 'opacity-100');
+                } else if (tabId === 'your-rights') {
+                    animateElements('.animate-slideup', 'opacity-100 translate-y-0');
+                    animateElements('.animate-fadein', 'opacity-100');
+                }
+            });
+        });
+        
+        // Initial animations for first tab
+        animateElements('.animate-slidein', 'opacity-100');
+        animateElements('.animate-fadein', 'opacity-100');
+        
+        function animateElements(selector, addClass) {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add(addClass);
+                }, index * 100);
+            });
+        }
+    });
+</script>
+
+<style>
+    /* Custom Animations */
+    .animate-slidein {
+        transform: translateX(-10px);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+    
+    .animate-slidein.opacity-100 {
+        transform: translateX(0);
+    }
+    
+    .animate-pop {
+        transform: scale(0.95);
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease-out;
+    }
+    
+    .animate-pop.scale-100 {
+        transform: scale(1);
+    }
+    
+    .animate-slideup {
+        transform: translateY(10px);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+    
+    .animate-slideup.translate-y-0 {
+        transform: translateY(0);
+    }
+    
+    .animate-fadein {
+        transition: opacity 0.5s ease-out;
+    }
+    
+    /* Smooth tab content transition */
+    .tab-content {
+        transition: opacity 0.3s ease-out, height 0.3s ease-out;
+    }
+</style>
 
 <!-- TOP FOOTER SECTION STARTS================================================== -->
 <script src="js/js-bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -245,75 +427,60 @@
  <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick-slick.min.js"></script>
     <script src="js/dist-aos.js"></script>
-</body>
-</html><!-- TOP FOOTER SECTION ENDS================================================== --><!-- /* CURVE UP green*/ STARTS --><html><section>
-        <div class="up11">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,
-                        931.37,112.77,600,112.77Z" class="shape-fill" stroke="none"></path>
-            </svg>
-        </div>
-</section>
-<!-- /* CURVE UP */ ENDS -->
+<!-- TOP FOOTER SECTION ENDS================================================== --><!-- /* 
 <!-- FOOTER SECTION STARTS================================================== -->
 
-<footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section footer-about">
-                <div class="footer-logo">
-                  <img src="images/img-logo.png" alt="" width="200px">
-                </div>
-                <p>Committed to providing organic, sustainable period care that's good for your body and the planet. Our mission is to empower women through healthy, eco-friendly menstrual products.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                </div>
-            </div>
+<footer class="bg-black text-green-200 px-6 md:px-16 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    
+    <!-- About Section -->
+    <div>
+      <img src="images/img-logo.png" alt="AaiFit Logo" class="w-48 mb-4">
+      <p class="mb-4 text-green-300">
+        Committed to providing organic, sustainable period care that's good for your body and the planet. Our mission is to empower women through healthy, eco-friendly menstrual products.
+      </p>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" aria-label="Facebook" class="text-white hover:text-green-400"><i class="fab fa-facebook-f text-xl"></i></a>
+        <a href="#" aria-label="Instagram" class="text-white hover:text-green-400"><i class="fab fa-instagram text-xl"></i></a>
+        <a href="#" aria-label="Twitter" class="text-white hover:text-green-400"><i class="fab fa-twitter text-xl"></i></a>
+        <a href="#" aria-label="Pinterest" class="text-white hover:text-green-400"><i class="fab fa-pinterest-p text-xl"></i></a>
+      </div>
+    </div>
 
-            <div class="footer-section footer-links-container">
-                <h3 class="footer-heading">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="Welcome.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                    <li><a href="About.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="Products.html"><i class="fas fa-chevron-right"></i> Our Products</a></li>
-                    <li><a href="Privacy.html"><i class="fas fa-chevron-right"></i> Sustainability</a></li>
-                    <li><a href="Privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
-                    <li><a href="Terms.html"><i class="fas fa-chevron-right"></i> Terms &amp; Conditions</a></li>
-                </ul>
-            </div>
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-4 border-b-2 border-green-500 inline-block">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="./index.html" class="hover:text-green-400"><i class="fas fa-chevron-right mr-2"></i>Home</a></li>
+        <li><a href="About.html" class="hover:text-green-400"><i class="fas fa-chevron-right mr-2"></i>About Us</a></li>
+        <li><a href="Products.html" class="hover:text-green-400"><i class="fas fa-chevron-right mr-2"></i>Our Products</a></li>
+        <li><a href="Privacy.html" class="hover:text-green-400"><i class="fas fa-chevron-right mr-2"></i>Sustainability</a></li>
+        <li><a href="Privacy.html" class="hover:text-green-400"><i class="fas fa-chevron-right mr-2"></i>Privacy Policy</a></li>
+        <li><a href="Terms.html" class="hover:text-green-400"><i class="fas fa-chevron-right mr-2"></i>Terms & Conditions</a></li>
+      </ul>
+    </div>
 
-            <div class="footer-section footer-contact">
-                <h3 class="footer-heading">Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Plot No 11 &amp; 11A Sector C , Industrial Area, Mandideep, Bhopal , Pin Code - 462046</p>
-                <a href="tel:+798743336"></a>
-                <p><i class="fas fa-phone-alt"></i> 798743336 , 7646824505 </p>
-               <a href="mailto:apnventures88@gmail.com" class="text-decoration-none"> <p><i class="fas fa-envelope"></i> apnventures88@gmail.com</p></a>
-            </div>
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-4 border-b-2 border-green-500 inline-block">Contact Us</h3>
+      <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Plot No 11 & 11A Sector C, Industrial Area, Mandideep, Bhopal, Pin Code - 462046</p>
+      <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i>798743336 , 7646824505</p>
+      <p><i class="fas fa-envelope mr-2"></i><a href="mailto:apnventures88@gmail.com" class="hover:text-green-400">apnventures88@gmail.com</a></p>
+    </div>
 
-            <!-- <div class="footer-section footer-newsletter">
-                <h3 class="footer-heading">Newsletter</h3>
-                <p>Subscribe to get updates on new products, special offers, and menstrual health tips.</p>
-                <form class="footer-newsletter-form">
-                    <input type="email" class="footer-newsletter-input" placeholder="Your email address" required>
-                    <button type="submit" class="footer-newsletter-button">Join</button>
-                </form>
-                <p>We respect your privacy. Unsubscribe at any time.</p>
-            </div> -->
-        </div>
+  </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 AAIFit. All Rights Reserved. | Designed &amp; Developed With &#10084;&#65039; By <a href="https://www.logixhunt.com/" class="text-danger text-decoration-none">Logixhunt</a> </p>
-            <!-- <div class="footer-payments">
-                <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-cc-mastercard"></i>
-                <i class="fab fa-cc-paypal"></i>
-                <i class="fab fa-cc-apple-pay"></i>
-            </div> -->
-        </div>
+  <!-- Footer Bottom -->
+  <div class="border-t border-green-800 mt-10 pt-4 text-center text-green-300 text-sm">
+    <p>&copy; 2025 AAIFit. All Rights Reserved. | Designed & Developed With 
+      <span class="text-red-500">❤</span> By 
+      <a href="https://www.logixhunt.com/" class="text-pink-400 hover:text-pink-600">Logixhunt</a>
+    </p>
+  </div>
 </footer>
+
 <!-- FOOTER SECTION ENDS================================================== -->
 
 
+</body>
 </html>
