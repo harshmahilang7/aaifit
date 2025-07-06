@@ -2,46 +2,60 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-02 16:10:07
  * @Last Modified by:   Dastan Alam
- * @Last Modified time: 2025-07-06 06:04:00 PM   18:07
+ * @Last Modified time: 2025-07-06 08:05:59 PM   20:07
  */
 document.addEventListener('DOMContentLoaded', function () {
-    // Enhanced FAQ toggle functionality
+    // Enhanced FAQ toggle functionality for mobile and desktop
     const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-
-        question.addEventListener('click', () => {
-            // Close all other items
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                    const otherAnswer = otherItem.querySelector('.faq-answer');
-                    
-                    // For smooth transition on close
-                    otherAnswer.style.maxHeight = otherAnswer.scrollHeight+ 'px';
-                    otherAnswer.offsetHeight; // force reflow
-                    otherAnswer.style.maxHeight = '0';
-                }
-            });
-
-            // Toggle current item
-            item.classList.toggle('active');
-            const answer = item.querySelector('.faq-answer');
-
-            if (item.classList.contains('active')) {
-                answer.style.maxHeight = 'none'; // reset
-                const height = answer.scrollHeight;
-                answer.style.maxHeight = height+20 + 'px';
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                answer.offsetHeight; // force reflow
+    // Function to close all FAQ items except the specified one
+    const closeOtherItems = (currentItem) => {
+        faqItems.forEach(item => {
+            if (item !== currentItem && item.classList.contains('active')) {
+                item.classList.remove('active');
+                const answer = item.querySelector('.faq-answer');
                 answer.style.maxHeight = '0';
             }
         });
+    };
+
+    // Initialize FAQ items
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        
+        // Set initial state
+        answer.style.maxHeight = '0';
+        answer.style.overflow = 'hidden';
+        answer.style.transition = 'max-height 0.3s ease-out';
+
+        // Handle both click and touch events for better mobile support
+        question.addEventListener('click', (e) => {
+            // Prevent double-tap zoom on mobile
+            if (e.target.tagName === 'A') return;
+            e.preventDefault();
+            
+            const wasActive = item.classList.contains('active');
+            closeOtherItems(item);
+            
+            item.classList.toggle('active', !wasActive);
+            answer.style.maxHeight = !wasActive ? answer.scrollHeight + 'px' : '0';
+        });
+
+        // Better touch support for mobile
+        question.addEventListener('touchend', (e) => {
+            if (e.target.tagName === 'A') return;
+            e.preventDefault();
+            
+            const wasActive = item.classList.contains('active');
+            closeOtherItems(item);
+            
+            item.classList.toggle('active', !wasActive);
+            answer.style.maxHeight = !wasActive ? answer.scrollHeight + 'px' : '0';
+        });
     });
 
-    // Intersection Observer for scroll animations
+    // Improved Intersection Observer with mobile considerations
     const animateElements = (elements) => {
         if ('IntersectionObserver' in window) {
             const observer = new IntersectionObserver((entries) => {
@@ -51,10 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.1 });
+            }, { 
+                threshold: window.innerWidth < 768 ? 0.05 : 0.1,
+                rootMargin: window.innerWidth < 768 ? '0px 0px -50px 0px' : '0px 0px -100px 0px'
+            });
 
             elements.forEach(element => observer.observe(element));
         } else {
+            // Fallback for browsers without IntersectionObserver
             elements.forEach((element, index) => {
                 setTimeout(() => {
                     element.classList.add('visible');
@@ -63,35 +81,57 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Animate FAQ items and CTA
+    // Animate FAQ items and CTA with mobile-friendly delays
     const faqElements = document.querySelectorAll('.faq-item, .faq-cta');
     animateElements(faqElements);
 
-    // Hover effect on absorbency levels
+    // Mobile-optimized hover effects
     const absorbencyLevels = document.querySelectorAll('.absorbency-level');
     absorbencyLevels.forEach(level => {
-        level.addEventListener('mouseenter', () => {
-            level.style.transform = 'translateY(-5px)';
-            level.style.boxShadow = '0 10px 25px rgba(76, 175, 80, 0.2)';
-        });
+        // Only apply hover effects for non-touch devices
+        if (!('ontouchstart' in window || navigator.maxTouchPoints > 0)) {
+            level.addEventListener('mouseenter', () => {
+                level.style.transform = 'translateY(-5px)';
+                level.style.boxShadow = '0 10px 25px rgba(76, 175, 80, 0.2)';
+            });
 
-        level.addEventListener('mouseleave', () => {
-            level.style.transform = '';
-            level.style.boxShadow = '';
-        });
+            level.addEventListener('mouseleave', () => {
+                level.style.transform = '';
+                level.style.boxShadow = '';
+            });
+        }
     });
 
-    // Ripple effect on CTA button
+    // Enhanced CTA button with better touch feedback
     const ctaButton = document.querySelector('.faq-cta-btn');
     if (ctaButton) {
+        // Add touch feedback class for mobile
+        ctaButton.addEventListener('touchstart', function() {
+            this.classList.add('touching');
+        });
+
+        ctaButton.addEventListener('touchend', function() {
+            this.classList.remove('touching');
+        });
+
         ctaButton.addEventListener('click', function (e) {
             e.preventDefault();
 
             const ripple = document.createElement('span');
             ripple.className = 'ripple-effect';
-            ripple.style.width = ripple.style.height = Math.max(ctaButton.offsetWidth, ctaButton.offsetHeight) + 'px';
-            ripple.style.left = e.offsetX - ripple.offsetWidth / 2 + 'px';
-            ripple.style.top = e.offsetY - ripple.offsetHeight / 2 + 'px';
+            
+            // Adjust ripple size for mobile
+            const size = Math.max(ctaButton.offsetWidth, ctaButton.offsetHeight);
+            ripple.style.width = ripple.style.height = size + 'px';
+            
+            // Get position based on device type
+            const rect = ctaButton.getBoundingClientRect();
+            const x = e.clientX ? e.clientX - rect.left : size / 2;
+            const y = e.clientY ? e.clientY - rect.top : size / 2;
+            
+            ripple.style.left = x - size / 2 + 'px';
+            ripple.style.top = y - size / 2 + 'px';
+            
             ctaButton.appendChild(ripple);
 
             setTimeout(() => {
@@ -100,4 +140,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 600);
         });
     }
+
+    // Handle window resize to adjust FAQ item heights
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            faqItems.forEach(item => {
+                if (item.classList.contains('active')) {
+                    const answer = item.querySelector('.faq-answer');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        }, 250);
+    });
 });

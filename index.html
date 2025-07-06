@@ -2,7 +2,7 @@
   @Author: DASTAN_E_ALAM
   @Date:   2025-07-01 04:59:22
   @Last Modified by:   Dastan Alam
-  @Last Modified time: 2025-07-06 07:48:46 PM   19:07
+  @Last Modified time: 2025-07-06 08:16:27 PM   20:07
 -->
 <!DOCTYPE html>
 <!-- HTML Document Type and Language Declaration --><html lang="en">
@@ -165,10 +165,57 @@
     .slider-dot {
         width: 12px;
         height: 12px;
+        display: none;
     }
 }
 
+/* Slider container */
+#slider {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: height 0.3s ease;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
 
+#slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+/* Portfolio items */
+.portfolio-item {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+/* Dots navigation */
+.slider-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bdc3c7;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .portfolio-item {
+        width: 100%;
+    }
+    
+    .slider-dot {
+        width: 10px;
+        height: 10px;
+        display: none;
+
+    }
+}
 
     </style>
     

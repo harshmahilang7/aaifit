@@ -2,7 +2,7 @@
  * @Author: Dastan Alam
  * @Date:   2025-07-02 07:31:01 PM   19:07
  * @Last Modified by:   Dastan Alam
- * @Last Modified time: 2025-07-06 07:47:49 PM   19:07
+ * @Last Modified time: 2025-07-06 08:15:07 PM   20:07
  */
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize plugins and select elements
@@ -21,31 +21,22 @@ document.addEventListener('DOMContentLoaded', function() {
     let autoScrollInterval;
     const isMobile = window.innerWidth < 768;
     const itemsPerPage = isMobile ? 1 : 3;
-    const totalDots = isMobile ? items.length : Math.ceil(items.length / itemsPerPage);
+    const totalPages = Math.ceil(items.length / itemsPerPage);
     
     // ======================
-    // DOT NAVIGATION SETUP
+    // INITIAL SETUP
     // ======================
     
-    // Clear existing dots
-    sliderDots.innerHTML = '';
-    
-    // Create dots based on view
-    for (let i = 0; i < totalDots; i++) {
-        const dot = document.createElement('div');
-        dot.classList.add('slider-dot');
-        if (i === 0) dot.classList.add('active');
-        
-        if (isMobile) {
-            dot.addEventListener('click', () => goToSlide(i));
-        } else {
+    // Create navigation dots only for desktop
+    if (!isMobile) {
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('slider-dot');
+            if (i === 0) dot.classList.add('active');
             dot.addEventListener('click', () => goToPage(i));
+            sliderDots.appendChild(dot);
         }
-        
-        sliderDots.appendChild(dot);
     }
-    
-    const dots = document.querySelectorAll('.slider-dot');
     
     // ======================
     // EVENT LISTENERS
@@ -70,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Navigation controls
-    prevBtn.addEventListener('click', () => isMobile ? goToPrevSlide() : goToPrevPage());
-    nextBtn.addEventListener('click', () => isMobile ? goToNextSlide() : goToNextPage());
+    prevBtn.addEventListener('click', () => isMobile ? goToPrevItem() : goToPrevPage());
+    nextBtn.addEventListener('click', () => isMobile ? goToNextItem() : goToNextPage());
     
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') isMobile ? goToPrevSlide() : goToPrevPage();
-        if (e.key === 'ArrowRight') isMobile ? goToNextSlide() : goToNextPage();
+        if (e.key === 'ArrowLeft') isMobile ? goToPrevItem() : goToPrevPage();
+        if (e.key === 'ArrowRight') isMobile ? goToNextItem() : goToNextPage();
     });
     
     // ======================
@@ -88,52 +79,44 @@ document.addEventListener('DOMContentLoaded', function() {
         return items[0].offsetWidth + parseInt(itemStyle.marginRight);
     }
     
-    function goToSlide(index) {
+    function goToIndex(index) {
         if (isAnimating) return;
         
         currentIndex = Math.max(0, Math.min(index, items.length - 1));
         const scrollPos = currentIndex * getItemWidth();
         
-        slider.scrollTo({
-            left: scrollPos,
-            behavior: 'smooth'
-        });
+        if (isMobile) {
+            slider.scrollTo({ left: scrollPos, behavior: 'smooth' });
+        } else {
+            animateScroll(scrollPos);
+        }
         
-        updateDots();
-        animateActiveCard();
-    }
-    
-    function goToPage(pageIndex) {
-        if (isAnimating) return;
-        
-        const newIndex = pageIndex * itemsPerPage;
-        currentIndex = Math.max(0, Math.min(newIndex, items.length - 1));
-        const scrollPos = currentIndex * getItemWidth();
-        
-        animateScroll(scrollPos);
         updateDots();
         animateVisibleCards();
     }
     
-    // Mobile navigation
-    function goToPrevSlide() {
-        goToSlide(currentIndex > 0 ? currentIndex - 1 : items.length - 1);
+    // Mobile navigation (item by item)
+    function goToPrevItem() {
+        goToIndex(currentIndex > 0 ? currentIndex - 1 : items.length - 1);
     }
     
-    function goToNextSlide() {
-        goToSlide(currentIndex < items.length - 1 ? currentIndex + 1 : 0);
+    function goToNextItem() {
+        goToIndex(currentIndex < items.length - 1 ? currentIndex + 1 : 0);
     }
     
-    // Desktop navigation
+    // Desktop navigation (page by page)
+    function goToPage(pageIndex) {
+        const newIndex = pageIndex * itemsPerPage;
+        goToIndex(newIndex);
+    }
+    
     function goToPrevPage() {
-        const currentPage = Math.floor(currentIndex / itemsPerPage);
-        const newPage = currentPage > 0 ? currentPage - 1 : Math.ceil(items.length / itemsPerPage) - 1;
+        const newPage = Math.max(0, Math.floor(currentIndex / itemsPerPage) - 1);
         goToPage(newPage);
     }
     
     function goToNextPage() {
-        const currentPage = Math.floor(currentIndex / itemsPerPage);
-        const newPage = currentPage < Math.ceil(items.length / itemsPerPage) - 1 ? currentPage + 1 : 0;
+        const newPage = Math.min(totalPages - 1, Math.floor(currentIndex / itemsPerPage) + 1);
         goToPage(newPage);
     }
     
@@ -150,44 +133,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function updateDots() {
-        const activeDot = isMobile ? currentIndex : Math.floor(currentIndex / itemsPerPage);
+        if (isMobile) return;
         
-        dots.forEach((dot, index) => {
-            if (index === activeDot) {
+        const currentPage = Math.floor(currentIndex / itemsPerPage);
+        document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+            if (index === currentPage) {
                 gsap.to(dot, {
                     scale: 1.3,
-                    duration: 0.3,
+                    duration: 0.4,
                     ease: "back.out(2)"
                 });
                 dot.classList.add('active');
             } else {
                 gsap.to(dot, {
                     scale: 1,
-                    duration: 0.3
+                    duration: 0.4
                 });
                 dot.classList.remove('active');
             }
         });
     }
     
-    function animateActiveCard() {
-        const activeCard = items[currentIndex].querySelector('.portfolio-card');
-        gsap.fromTo(activeCard,
-            { y: 20, opacity: 0.8 },
-            { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }
-        );
-    }
-    
     function animateVisibleCards() {
-        const startIdx = Math.floor(currentIndex / itemsPerPage) * itemsPerPage;
-        const endIdx = Math.min(startIdx + itemsPerPage, items.length);
-        
-        for (let i = startIdx; i < endIdx; i++) {
-            const card = items[i].querySelector('.portfolio-card');
-            gsap.fromTo(card,
-                { y: 20, opacity: 0.8 },
+        if (isMobile) {
+            const activeCard = items[currentIndex].querySelector('.portfolio-card');
+            gsap.fromTo(activeCard,
+                { y: 30, opacity: 0.8 },
                 { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }
             );
+        } else {
+            const startIdx = Math.floor(currentIndex / itemsPerPage) * itemsPerPage;
+            const endIdx = Math.min(startIdx + itemsPerPage, items.length);
+            
+            for (let i = startIdx; i < endIdx; i++) {
+                const card = items[i].querySelector('.portfolio-card');
+                gsap.fromTo(card,
+                    { y: 30, opacity: 0.8 },
+                    { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }
+                );
+            }
         }
     }
     
@@ -195,21 +179,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // AUTO-SCROLL FEATURE
     // ======================
     
-    function startAutoScroll() {
-        if (autoScrollInterval) clearInterval(autoScrollInterval);
-        
-        autoScrollInterval = setInterval(() => {
-            if (isMobile) {
-                goToNextSlide();
-            } else {
-                goToNextPage();
-            }
-        }, 5000);
-    }
+    // function startAutoScroll() {
+    //     if (isMobile) return;
+    //     autoScrollInterval = setInterval(() => {
+    //         if (currentIndex < items.length - itemsPerPage) {
+    //             isMobile ? goToNextItem() : goToNextPage();
+    //         } else {
+    //             goToIndex(0);
+    //         }
+    //     }, 5000);
+    // }
     
-    function pauseAutoScroll() {
-        clearInterval(autoScrollInterval);
-    }
+    // function pauseAutoScroll() {
+    //     clearInterval(autoScrollInterval);
+    // }
     
     slider.addEventListener('mouseenter', pauseAutoScroll);
     slider.addEventListener('mouseleave', startAutoScroll);
@@ -228,13 +211,17 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (newIndex !== currentIndex) {
                 currentIndex = newIndex;
-                updateDots();
                 
-                if (isMobile) {
-                    animateActiveCard();
-                } else {
-                    animateVisibleCards();
+                if (!isMobile) {
+                    // Snap to nearest page on desktop
+                    const nearestPageIndex = Math.round(currentIndex / itemsPerPage) * itemsPerPage;
+                    if (currentIndex !== nearestPageIndex) {
+                        goToIndex(nearestPageIndex);
+                    }
                 }
+                
+                updateDots();
+                animateVisibleCards();
             }
         }, 100);
     });
@@ -259,22 +246,18 @@ document.addEventListener('DOMContentLoaded', function() {
             delay: 0.2
         });
         
-        // Header animations
-        gsap.from(".section-header .subtitle", {
-            y: 40,
-            opacity: 0,
-            duration: 0.8,
-            ease: "power3.out",
-            delay: 0.1
+        // Background element animations
+        gsap.to(".element-1", {
+            duration: 20,
+            x: 100,
+            y: 50,
+            rotation: 5,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
         });
         
-        gsap.from(".section-header .title", {
-            y: 50,
-            opacity: 0,
-            duration: 0.8,
-            ease: "power3.out",
-            delay: 0.2
-        });
+        // ... (include your other desktop animations here)
         
         // Card hover effects
         items.forEach(item => {
@@ -293,6 +276,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     ease: "power2.out",
                     duration: 0.8
                 });
+                
+                gsap.to(item.querySelector('.portfolio-image'), {
+                    y: -(centerY - y) / 15,
+                    x: (centerX - x) / 15,
+                    duration: 1.5,
+                    ease: "power2.out"
+                });
             });
             
             item.addEventListener('mouseleave', () => {
@@ -302,16 +292,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     ease: "elastic.out(1, 0.5)",
                     duration: 1.2
                 });
+                
+                gsap.to(item.querySelector('.portfolio-image'), {
+                    y: 0,
+                    x: 0,
+                    duration: 1.2,
+                    ease: "elastic.out(1, 0.5)"
+                });
             });
         });
     }
     
-    // Initialize
-    updateDots();
+    // Start the auto-scroll
     startAutoScroll();
-    if (isMobile) {
-        animateActiveCard();
-    } else {
-        animateVisibleCards();
-    }
 });
