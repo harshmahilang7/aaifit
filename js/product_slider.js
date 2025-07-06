@@ -2,7 +2,7 @@
  * @Author: Dastan Alam
  * @Date:   2025-07-02 07:31:01 PM   19:07
  * @Last Modified by:   Dastan Alam
- * @Last Modified time: 2025-07-06 08:15:07 PM   20:07
+ * @Last Modified time: 2025-07-06 08:21:08 PM   20:07
  */
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize plugins and select elements
@@ -194,9 +194,9 @@ document.addEventListener('DOMContentLoaded', function() {
     //     clearInterval(autoScrollInterval);
     // }
     
-    slider.addEventListener('mouseenter', pauseAutoScroll);
-    slider.addEventListener('mouseleave', startAutoScroll);
-    slider.addEventListener('touchstart', pauseAutoScroll);
+    // slider.addEventListener('mouseenter', pauseAutoScroll);
+    // slider.addEventListener('mouseleave', startAutoScroll);
+    // slider.addEventListener('touchstart', pauseAutoScroll);
     
     // ======================
     // SCROLL HANDLING
@@ -304,5 +304,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Start the auto-scroll
-    startAutoScroll();
+    // startAutoScroll();
 });
