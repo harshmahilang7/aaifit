@@ -2,7 +2,7 @@
  * @Author: DASTAN_E_ALAM
  * @Date:   2025-07-01 04:59:16
  * @Last Modified by:   Dastan Alam
- * @Last Modified time: 2025-07-06 04:41:33 PM   16:07
+ * @Last Modified time: 2025-07-06 04:49:02 PM   16:07
  */
 :root {
   --primary-dark: #1b5e20;
@@ -174,6 +174,7 @@
   overflow: hidden;
   margin-top: -1px;
   z-index: 2;
+  background-color: #ffffff;
 }
 
 .custom-shape-divider {
